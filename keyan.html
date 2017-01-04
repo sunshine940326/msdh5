@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>科研卓著</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/keyan/keyan_bgd.png" class="bgd">
+    <div class="keyan_left">
+        <img src="img/keyan/left_1.png" class="left1">
+        <img src="img/keyan/left_2.png" class="left2">
+        <img src="img/keyan/left_3.png" class="left3">
+        <img src="img/keyan/left_4.png" class="left4">
+
+    </div>
+    <div class="keyan_right">
+        <img src="img/keyan/right_1.png" class="right1">
+        <img src="img/keyan/right_2.png" class="right2">
+        <img src="img/keyan/right_3.png" class="right3">
+        <img src="img/keyan/right_4.png" class="right4">
+        <img src="img/keyan/right_5.png" class="right5">
+        <img src="img/keyan/right_6.png" class="right6">
+    </div>
+    <div class="bubble">
+        <img src="img/keyan/bubble.png" class="bubble1">
+        <img src="img/keyan/bubble.png" class="bubble2">
+        <img src="img/keyan/bubble.png" class="bubble3">
+        <img src="img/keyan/bubble.png" class="bubble4">
+        <img src="img/keyan/bubble.png" class="bubble5">
+        <img src="img/keyan/bubble.png" class="bubble6">
+    </div>
+    <a href="imagetext.html" class="link_yimiao">
+        <img src="img/keyan/link_yimiao.png" id="link_yimiao">
+    </a>
+    <a href="imagetext.html" class="link_xinyaoyan">
+        <img src="img/keyan/link_xinyaoyan.png" id="link_xinyaoyan">
+    </a>
+
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+
+<script src="js/index.js"></script>
+<script>
+
+    document.body.style.height = view().h + 'px';
+
+    window.onload= function () {
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+        }, false);
+
+    }
+
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+</script>
+</body>
+</html>

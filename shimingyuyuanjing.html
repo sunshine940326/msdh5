@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>使命与愿景</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/shiming/shiming_bgd.png" class="bgd">
+    <div class="shiming_cloud">
+        <img src="img/shiming/shiming_cloud1.png" class="shiming_cloud1">
+        <img src="img/shiming/shiming_cloud1.png" class="shiming_cloud2">
+        <img src="img/shiming/shiming_cloud1.png" class="shiming_cloud3">
+        <img src="img/shiming/shiming_cloud1.png" class="shiming_cloud4">
+        <img src="img/shiming/shiming_cloud1.png" class="shiming_cloud5">
+    </div>
+    <img src="img/shiming/pc.gif" class="shiming_pc">
+    <img src="img/shiming/touxiang.png" class="touxiang">
+    <img src="img/shiming/light.png" class="shiming_light">
+    <!--<img src="img/shiming/clock.png" class="shiming_clock">-->
+    <a href="imagetext.html" class="link_shangyedaode">
+        <img src="img/shiming/link_shangyedaode.png" id="link_shangyedaode">
+    </a>
+    <a href="imagetext.html" class="link_shiming2">
+        <img src="img/shiming/link_shiming.png" id="link_shiming2">
+    </a>
+
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    document.body.style.height = view().h + 'px';
+
+    window.onload = function () {
+        document.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        }, false);
+    }
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+
+</script>
+</body>
+</html>

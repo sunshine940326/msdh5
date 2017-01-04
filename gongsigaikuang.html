@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <link rel="stylesheet" href="css/index.css">
+    <title>公司概况</title>
+</head>
+<body bgcolor="#208f9b">
+<div class="container">
+    <div class="earthMap">
+        <img src="img/gongsigaikuang/earthmap.gif" alt="">
+    </div>
+    <img src="img/gongsigaikuang/gaikuang_bgd.png" class="bgd">
+    <a href="imagetext.html" class="link_inChina2">
+        <img src="img/gongsigaikuang/link_inChina.png" id="link_inChina2">
+    </a>
+    <img src="img/gongsigaikuang/gaikuang_cloud1.png" class="gaikuang_cloud1">
+    <img src="img/gongsigaikuang/gaikuang_cloud2.png" class="gaikuang_cloud2">
+    <img src="img/gongsigaikuang/gaikuang_cloud3.png" class="gaikuang_cloud3">
+    <img src="img/gongsigaikuang/gaikuang_cloud4.png" class="gaikuang_cloud4">
+    <a href="videolist.html" class="link_shipin">
+        <img src="img/gongsigaikuang/link_shipin.png" id="link_shipin">
+    </a>
+    <a href="imagetext.html" class="link_qiyerongyu">
+        <img src="img/gongsigaikuang/link_qiyerongyu.png" id="link_qiyerongyu">
+    </a>
+
+    <img src="img/gongsigaikuang/gaikuang_thing1.png" class="gaikuang_thing1">
+    <img src="img/gongsigaikuang/gaikuang_thing2.png" class="gaikuang_thing2">
+    <img src="img/gongsigaikuang/gaikuang_thing2.png" class="gaikuang_thing3">
+    <img src="img/gongsigaikuang/gaikuang_thing2.png" class="gaikuang_thing4">
+    <img src="img/gongsigaikuang/gaikuang_thing2.png" class="gaikuang_thing5">
+
+
+    <a href="imagetext.html" class="link_inEarth">
+        <img src="img/gongsigaikuang/link_inEarth.png" id="link_inEarth">
+    </a>
+
+
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+
+    window.onload = function () {
+        document.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        }, false);
+
+    }
+
+    function stopBubble(e) {
+        //如果提供了事件对象，则这是一个非IE浏览器
+        if (e && e.stopPropagation) {
+            //因此它支持W3C的stopPropagation()方法
+            e.stopPropagation();
+        } else {
+            //否则，我们需要使用IE的方式来取消事件冒泡
+            window.event.cancelBubble = true;
+        }
+        return false;
+    }
+
+    document.body.style.height = view().h + 'px';
+    $("#map1").click(function () {
+        $("#map1").hide();
+        $("#map2").show();
+    })
+    $("#map2").click(function (event) {
+        stopBubble(event);
+        $("#map2").hide();
+        $("#map1").show();
+    })
+
+    $('.link_shipin').click(function () {
+        stopBubble(event);
+    })
+    window.addEventListener("resize", function () {
+        if (window.innerWidth < window.innerHeight) {
+            $('#orientLayer').hide();
+        } else {
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+
+</script>
+</body>
+</html>

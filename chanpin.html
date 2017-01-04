@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>在华产品</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/chanpin/chanpin_bgd.png" class="bgd">
+    <img src="img/chanpin/e.png" class="e">
+    <div class="chanpin_cloud">
+        <img src="img/chanpin/cloud1.png" class="chanpin_cloud1">
+        <img src="img/chanpin/cloud2.png" class="chanpin_cloud2">
+        <img src="img/chanpin/cloud3.png" class="chanpin_cloud3">
+        <img src="img/chanpin/cloud3.png" class="chanpin_cloud4">
+    </div>
+    <div class="chanpin_box">
+        <div class="box"></div>
+    </div>
+    <div class="people">
+        <img src="img/chanpin/peopletop.png" class="peopletop">
+        <img src="img/chanpin/peoplebottom.png" class="peoplebottom">
+
+    </div>
+    <div class="chanpinwater">
+        <img src="img/chanpin/water.png" class="water1">
+        <img src="img/chanpin/water.png" class="water2">
+        <img src="img/chanpin/water.png" class="water3">
+        <img src="img/chanpin/water.png" class="water4">
+        <img src="img/chanpin/water1.png" class="water5">
+        <img src="img/chanpin/water1.png" class="water6">
+        <img src="img/chanpin/water1.png" class="water7">
+        <img src="img/chanpin/water1.png" class="water8">
+        <img src="img/chanpin/water1.png" class="water9">
+        <img src="img/chanpin/water1.png" class="water10">
+    </div>
+    <div class="chanpinwaterRight">
+        <img src="img/chanpin/water.png" class="water1">
+        <img src="img/chanpin/water.png" class="water2">
+        <img src="img/chanpin/water.png" class="water3">
+        <img src="img/chanpin/water.png" class="water4">
+        <img src="img/chanpin/water1.png" class="water5">
+        <img src="img/chanpin/water1.png" class="water6">
+        <img src="img/chanpin/water1.png" class="water7">
+        <img src="img/chanpin/water1.png" class="water8">
+        <img src="img/chanpin/water1.png" class="water9">
+        <img src="img/chanpin/water1.png" class="water10">
+    </div>
+    <a href="imagetext.html" class="link_baojian">
+        <img src="img/chanpin/link_baojian.png" id="link_baojian">
+    </a>
+    <a href="imagetext.html" class="link_jiankang">
+        <img src="img/chanpin/link_jiankang.png" id="link_jiankang">
+    </a>
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+    document.body.style.height = view().h + 'px';
+
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+
+    window.onload= function () {
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+        }, false);
+
+    }
+
+</script>
+</body>
+</html>

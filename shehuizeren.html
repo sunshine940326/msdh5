@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>社会责任</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="container">
+    <img src="img/zeren/zeren_bgd.png" class="bgd">
+
+    <a href="imagetext.html"><img src="img/zeren/leaf1.png" class="leaf1"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf2.png" class="leaf2"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf3.png" class="leaf3"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf4.png" class="leaf4"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf5.png" class="leaf5"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf6.png" class="leaf6"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf7.png" class="leaf7"></a>
+    <a href="imagetext.html"><img src="img/zeren/leaf8.png" class="leaf8"></a>
+    <div class="car">
+        <img src="img/zeren/car1.png" class="zeren_car1">
+        <img src="img/zeren/car2.png" class="zeren_car2">
+    </div>
+
+    <img src="img/zeren/cloud1.png" class="zeren_cloud1">
+    <img src="img/zeren/cloud2.png" class="zeren_cloud2">
+    <img src="img/zeren/cloud3.png" class="zeren_cloud3">
+    <a href="imagetext.html" class="link_aizibing">
+        <img src="img/zeren/link_aizibing.png" id="link_aizibing">
+    </a>
+    <a href="imagetext.html" class="link_beike">
+        <img src="img/zeren/link_beike.png" id="link_beike">
+    </a>
+    <a href="imagetext.html" class="link_kangzhen">
+        <img src="img/zeren/link_kangzhen.png" id="link_kangzhen">
+    </a>
+    <a href="imagetext.html" class="link_qiyezeren">
+        <img src="img/zeren/link_qiyezeren.png" id="link_qiyezeren">
+    </a>
+    <a href="imagetext.html" class="link_xiangmu">
+        <img src="img/zeren/link_xiangmu.png" id="link_xiangmu">
+    </a>
+    <a href="imagetext.html" class="link_yigan">
+        <img src="img/zeren/link_yigan.png" id="link_yigan">
+    </a>
+    <a href="imagetext.html" class="link_zhiyuanzhe">
+        <img src="img/zeren/link_zhiyuanzhe.png" id="link_zhiyuanzhe">
+    </a>
+
+    <img src="img/zeren/tree.png" class="tree">
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    document.body.style.height = view().h + 'px';
+
+
+    window.onload = function () {
+        document.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        }, false);
+    }
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+
+</script>
+</body>
+</html>
