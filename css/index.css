@@ -1,2926 +1,487 @@
-@charset "utf-8";
-@charset "utf-8";
-/* CSS Document */
-
-/*reset*/
-.body{
-    overflow: hidden;
+@charset "utf-8";.body{overflow:hidden}
+input,textarea{margin:0;padding:0;outline:0;border:none}
+textarea{overflow:auto;resize:none}
+em{font-style:normal}
+ul{margin:0;padding:0;list-style:none}
+h1,h2,p{margin:0;font-weight:400}
+a,input{-webkit-tap-highlight-color:rgba(255,0,0,0)}
+img{border:none;vertical-align:top}
+body{position:relative;overflow:hidden;margin:0;color:#666;font-size:26px;font-family:Arial,"微软雅黑"}
+.container{top:0;left:0;overflow:hidden;width:100%;height:100%;min-width:300px}
+.container .bgd{width:100%;height:100%}
+.translate{position:absolute;top:3%;right:6%;z-index:999;width:12%}
+.chanpin_img{position:absolute;top:43%;left:2%;width:37.3%}
+.yixue_img{position:absolute;top:55%;left:56%;width:21.3%}
+.book_img{position:absolute;top:68%;left:14%;width:25.3%}
+.people_img{position:absolute;top:77%;left:3.6%;width:21.6%}
+.keyan_img{position:absolute;top:68%;left:69%;width:28.6%}
+.translate img{width:100%}
+.earth{position:absolute;top:32%;right:4%;width:31%;height:20%;animation:updown 2s ease-in-out 0s infinite alternate;-webkit-animation:updown 2s ease-in-out 0s infinite alternate}
+.earthimg{position:absolute;right:11%;width:91%}
+.earth_bottom{position:absolute;top:38%;right:0;width:40%}
+.leaf{position:absolute;top:-22%;right:38%;width:37%;animation:rotatecb 2s linear 0s infinite alternate;-webkit-animation:rotatecb 2s linear 0s infinite alternate}
+.heartbig{position:absolute;top:29%;left:-65%;width:137%}
+.heart{position:absolute;top:10%;left:15%;width:15%}
+.heart{position:absolute;top:12%;left:18%;width:17%;height:20%}
+.heart1{position:absolute;top:10%;right:10%;width:30%;animation:updown 1.5s linear 0s infinite alternate;-webkit-animation:updown 1.5s linear 0s infinite alternate}
+.heart2{position:absolute;top:17%;right:48%;width:17%;transform:rotate(-25deg);animation:updown 1.5s linear 0s infinite alternate;-webkit-animation:updown 1.5s linear 0s infinite alternate}
+.heart3{position:absolute;top:28%;right:13%;width:14%;transform:rotate(4deg);animation:updown 1.5s linear 0s infinite alternate;-webkit-animation:updown 1.5s linear 0s infinite alternate}
+.heart4{position:absolute;top:29%;right:39%;width:23%;transform:rotate(-10deg);animation:updown 1.5s linear 0s infinite alternate;-webkit-animation:updown 1.5s linear 0s infinite alternate}
+.ball{position:absolute;top:63%;right:3%;width:14%;height:30%}
+.ball1{position:absolute;top:0;left:0;width:25%;animation:updown 1.2s 0s infinite alternate;-webkit-animation:updown 1.2s 0s infinite alternate}
+.ball2{position:absolute;top:33%;left:48%;width:14%;animation:updown 1.7s infinite alternate;-webkit-animation:updown 1.7s infinite alternate}
+.container .talkleft{position:absolute;top:76.6%;left:0;width:9%;height:3%;animation:fadein 2.8s linear 0s both;-webkit-animation:fadein 2.8s linear 0s both}
+.container .talkleft img,.container .talkright img{position:absolute;top:0;left:0;width:100%}
+.container .talkright{position:absolute;top:76.6%;left:25%;width:9%;animation:fadein 2.8s linear 2.8s both;-webkit-animation:fadein 2.8s linear 2.8s both}
+.dot{position:absolute;width:.185em;height:.185em;border-radius:50%;background-color:#a0a1a1}
+.container .dot1{top:.25em;left:.148em;animation:fadein 2.8s linear .7s both;-webkit-animation:fadein 2.8s linear .7s both}
+.container .dot2{top:.25em;left:.554em;animation:fadein 2.8s linear 1.4s both;-webkit-animation:fadein 2.8s linear 1.4s both}
+.container .dot3{top:.25em;left:.9148em;animation:fadein 2.8s linear 2.1s both;-webkit-animation:fadein 2.8s linear 2.1s both}
+.container .dot4{top:.25em;left:.248em;animation:fadein 2.8s linear 3.5s both;-webkit-animation:fadein 2.8s linear 3.5s both}
+.container .dot5{top:.25em;left:.5814em;animation:fadein 2.8s linear 4.2s both;-webkit-animation:fadein 2.8s linear 4.2s both}
+.container .dot6{top:.25em;left:.9148em;animation:fadein 2.8s linear 4.9s both;-webkit-animation:fadein 2.8s linear 4.9s both}
+.water{position:absolute;top:37%;left:14%;z-index:999;width:17%;height:25%}
+.water1{position:absolute;bottom:7%;left:34%;width:9%;animation:scale .8s linear 0s infinite alternate;-webkit-animation:scale .8s linear 0s infinite alternate}
+.water2{position:absolute;bottom:14%;left:36%;width:6%;animation:scale .6s linear .1s infinite alternate;-webkit-animation:scale .6s linear .1s infinite alternate}
+.water3{position:absolute;bottom:24%;left:59%;width:9%;animation:scale .5s linear .3s infinite alternate;-webkit-animation:scale .5s linear .3s infinite alternate}
+.water4{position:absolute;bottom:43%;left:50%;width:6%;animation:scale .7s linear .2s infinite alternate;-webkit-animation:scale .7s linear .2s infinite alternate}
+.water5{position:absolute;bottom:64%;left:54%;width:12%;animation:scale .7s linear .2s infinite alternate;-webkit-animation:scale .7s linear .2s infinite alternate}
+.water6{position:absolute;bottom:69%;left:66%;width:6%;animation:scale .9s linear .3s infinite alternate;-webkit-animation:scale .9s linear .3s infinite alternate}
+.water7{position:absolute;bottom:83%;left:49%;width:10%;animation:scale .5s linear 0s infinite alternate;-webkit-animation:scale .5s linear 0s infinite alternate}
+.water8{position:absolute;bottom:90%;left:46%;width:7%;animation:scale 2.8s linear 0s infinite alternate;-webkit-animation:scale 2.8s linear 0s infinite alternate}
+.water9{position:absolute;bottom:90%;left:76%;width:6%;animation:scale 1.8s linear .3s infinite alternate;-webkit-animation:scale 1.8s linear .3s infinite alternate}
+.water10{position:absolute;bottom:100%;left:52%;width:11%;animation:scale .8s linear .2s infinite alternate;-webkit-animation:scale .8s linear .2s infinite alternate}
+.waterRed{position:absolute;top:47%;left:24%;z-index:999;width:17%;height:15%}
+.cloud{position:absolute;top:0;left:0;width:100%;height:35%}
+.cloud1{position:absolute;top:21%;left:3%;width:26%;opacity:.7;animation:cloud 5s linear 0s infinite alternate;-webkit-animation:cloud 5s linear 0s infinite alternate}
+.cloud2{position:absolute;top:5%;left:48%;width:20%;opacity:.8;animation:cloud 8s linear .1s infinite alternate;-webkit-animation:cloud 8s linear .1s infinite alternate}
+.cloud3{position:absolute;top:81%;left:4%;width:35%;opacity:.9;animation:cloud 6s linear .2s infinite alternate;-webkit-animation:cloud 6s linear .2s infinite alternate}
+.cloud4{position:absolute;top:58%;left:71%;width:23%;opacity:.6;animation:cloud 10s linear 0s infinite alternate;-webkit-animation:cloud 10s linear 0s infinite alternate}
+.ship{position:absolute;top:52%;right:0;width:76%;height:40%}
+.ship1{position:absolute;top:5%;right:5%;width:10%;animation:cloud 8s linear .1s infinite alternate;-webkit-animation:cloud 8s linear .1s infinite alternate}
+.ship2{position:absolute;top:84%;right:55%;width:13%;animation:cloud 8s linear .1s infinite alternate;-webkit-animation:cloud 8s linear .1s infinite alternate}
+.link_shiming{position:absolute;top:21%;left:1.9%;width:29.3%;height:6%}
+.link_shiming img{width:110%}
+.link_gaikuang{position:absolute;top:12.6%;left:36.8%;width:20%;height:21%}
+.link_gaikuang img{position:absolute;top:10%;width:114.5%}
+.en_link_gaikuang img{width:142%}
+.link_zeren{position:absolute;top:32%;left:59.5%;width:33%;height:21%}
+.link_zeren img{position:absolute;top:26%}
+.link_chanpin{position:absolute;top:60%;left:11.5%;width:18%;height:6%}
+.en_link_chanpin{top:59.8%;left:5.8%;width:29.7%}
+.link_yixue{position:absolute;top:63%;left:55.5%;width:18%;height:6%;background-size:100%}
+.en_link_yixue{left:48%;width:31.6%}
+.link_tushuguan{position:absolute;top:73%;left:33.5%;width:21%;height:6%}
+.en_link_tushuguan{top:73%;left:31%;width:26%}
+.link_rencai{position:absolute;top:87.3%;left:7.5%;width:18%;height:6%}
+.en_link_rencai{top:85.3%;left:4.5%;width:23%}
+.link_keyan{position:absolute;top:85.3%;left:57.5%;width:18%;height:6%}
+.en_link_keyan{top:83%;left:57%;width:20%}
+.link_chanpin img,.link_keyan img,.link_rencai img,.link_shiming img,.link_tushuguan img,.link_yixue img,.link_zeren img{width:110%}
+.bubble{position:absolute;top:55.8%;left:70%;width:20%;height:5%}
+.bubble1{position:absolute;top:51%;left:23%;width:12%;animation:scale .8s linear 0s infinite alternate;-webkit-animation:scale .8s linear 0s infinite alternate}
+.bubble2{position:absolute;top:44%;left:51%;width:16%;animation:scale .8s linear .2s infinite alternate;-webkit-animation:scale .8s linear .2s infinite alternate}
+.bubble3{position:absolute;top:53%;left:79%;width:9%;animation:scale .5s linear 0s infinite alternate;-webkit-animation:scale .5s linear 0s infinite alternate}
+.bubble4{position:absolute;top:54%;left:10%;width:9%;animation:scale 1s linear .3s infinite alternate;-webkit-animation:scale 1s linear .3s infinite alternate}
+.bubble5{position:absolute;top:59%;left:68%;width:6%;animation:scale .5s linear 0s infinite alternate;-webkit-animation:scale .5s linear 0s infinite alternate}
+.bubble6{position:absolute;top:58%;left:39%;width:9%;animation:scale 1s linear .3s infinite alternate;-webkit-animation:scale 1s linear .3s infinite alternate}
+.keyan_left{position:absolute;top:17%;left:0;width:21%;height:22%}
+.keyan_left .left1{position:absolute;top:35%;left:9%;width:30%;animation:updown 2s ease-in-out 0s infinite alternate;-webkit-animation:updown 2s ease-in-out 0s infinite alternate}
+.keyan_left .left2{position:absolute;top:2%;left:49%;width:87%;animation:updown 3s ease-in-out .2s infinite alternate;-webkit-animation:updown 3s ease-in-out .2s infinite alternate}
+.keyan_left .left3{position:absolute;top:72%;left:10%;width:30%;animation:updown 2.5s ease-in-out .5s infinite alternate;-webkit-animation:updown 2.5s ease-in-out .5s infinite alternate}
+.keyan_left .left4{position:absolute;top:62%;left:61%;width:30%;animation:updown 3.5s ease-in-out .3s infinite alternate;-webkit-animation:updown 3.5s ease-in-out .3s infinite alternate}
+.keyan_right{position:absolute;top:18%;right:0;width:44%;height:22%}
+.keyan_right .right1{position:absolute;top:11%;left:9%;width:30%;animation:scale2 3s linear .2s infinite alternate;-webkit-animation:scale2 3s linear .2s infinite alternate}
+.keyan_right .right2{position:absolute;top:4%;left:69%;width:30%;animation:scale2 4s linear .1s infinite alternate;-webkit-animation:scale2 4s linear .1s infinite alternate}
+.keyan_right .right3{position:absolute;top:55%;left:0;width:28%;animation:scale2 3.5s linear .3s infinite alternate;-webkit-animation:scale2 3.5s linear .3s infinite alternate}
+.keyan_right .right4{position:absolute;top:76%;left:29%;width:28%;animation:scale2 4s linear .2s infinite alternate;-webkit-animation:scale2 4s linear .2s infinite alternate}
+.keyan_right .right5{position:absolute;top:33%;left:37%;width:38%;animation:scale2 3s linear .4s infinite alternate;-webkit-animation:scale2 3s linear .4s infinite alternate}
+.keyan_right .right6{position:absolute;top:72%;left:60%;width:38%;animation:scale2 5s linear .2s infinite alternate;-webkit-animation:scale2 5s linear .2s infinite alternate}
+.link_yimiao{position:absolute;top:7.5%;left:2%;width:23%;height:30%}
+.link_yimiao img{width:120%}
+.en_link_yimiao{top:7.5%;left:7.2%;width:28.2%}
+.link_xinyaoyan{position:absolute;top:12%;left:35%;width:64%;height:31%}
+.link_xinyaoyan img{width:55%}
+.en_link_xinyaoyan{top:13%;left:38%;width:47.7%}
+.tushuguan_heart{position:absolute;top:2%;left:24%;width:46%;height:19%}
+.thing1{position:absolute;top:32%;left:10%;width:16%;animation:updown 2.5s ease-in-out .5s infinite alternate;-webkit-animation:updown 2.5s ease-in-out .5s infinite alternate}
+.thing2{position:absolute;top:69%;left:12%;width:20%;animation:updown 2s ease-in-out .1s infinite alternate;-webkit-animation:updown 2s ease-in-out .1s infinite alternate}
+.thing3{position:absolute;top:27%;left:70%;width:17%;animation:updown 3s ease-in-out 0s infinite alternate;-webkit-animation:updown 3s ease-in-out 0s infinite alternate}
+.thing4{position:absolute;top:69%;left:71%;width:15%;animation:updown 2.5s ease-in-out .5s infinite alternate;-webkit-animation:updown 2.5s ease-in-out .5s infinite alternate}
+.tushuguan_heart1{position:absolute;top:20%;left:37%;width:28%;animation:scale2 3s linear 0s infinite alternate;-webkit-animation:scale2 3s linear 0s infinite alternate}
+.link_xinyao{position:absolute;top:4%;left:25%;width:71%;height:23%}
+.link_xinyao img{position:absolute;top:-10%;right:-9px;width:51%}
+.en_link_xinyao{top:4%;left:15%;width:73%}
+.link_shouce{position:absolute;top:62%;left:52%;width:47%;height:30%}
+.link_shouce img{width:96%}
+.en_link_shouce{position:absolute;top:62%;left:48%;width:51%;height:30%}
+.link_zhenliaoshouce{position:absolute;top:51%;left:11.2%;width:33%;height:23%}
+.link_zhenliaoshouce img{width:100%}
+.en_link_zhenliaoshouce{position:absolute;top:51%;left:16.2%;width:22%;height:23%}
+.tushuguan_book{position:absolute;top:67.4%;left:68.7%;width:26%}
+.balloon{position:absolute;top:0;left:0;width:34%;animation:updown 1.5s ease-in-out 0s infinite alternate;-webkit-animation:updown 1.5s ease-in-out 0s infinite alternate}
+.chanpinwaterRight{position:absolute;top:37%;left:31%;width:13%;height:12%}
+.chanpinwater{position:absolute;top:22%;left:18%;width:13%;height:27%}
+.e{position:absolute;top:67%;left:75%;width:7%;animation:e 5s linear 0s infinite alternate;-webkit-animation:e 5s linear 0s infinite alternate}
+.people{position:absolute;top:42%;left:64%;width:14%;height:14%}
+.peopletop{position:absolute;top:9%;left:25%;width:51%;-webkit-transform-origin:center bottom;transform-origin:center bottom;animation:shake 16s infinite;-webkit-animation:shake 16s infinite}
+.peoplebottom{position:absolute;top:58%;left:7%;width:71%}
+.chanpin_cloud{position:absolute;top:0;overflow:hidden;width:100%;height:30%}
+.chanpin_cloud1{position:absolute;top:19%;left:4%;width:36%;animation:cloud 12s linear 2s infinite alternate;-webkit-animation:cloud 12s linear 2s infinite alternate}
+.chanpin_cloud2{position:absolute;top:9%;left:52%;width:22%;animation:cloud 7s linear 0s infinite alternate;-webkit-animation:cloud 7s linear 0s infinite alternate}
+.chanpin_cloud3{position:absolute;top:11%;left:60%;width:22%;animation:cloud 7s linear 0s infinite alternate;-webkit-animation:cloud 7s linear 0s infinite alternate}
+.chanpin_cloud4{position:absolute;top:63%;left:78%;width:22%;animation:cloud 15s linear .1s infinite alternate;-webkit-animation:cloud 15s linear .1s infinite alternate}
+.chanpin_box{position:absolute;top:64%;left:40%;width:23%;height:15%}
+.box{position:absolute;top:42%;left:15%;width:70%;animation:updown 3s ease-in-out 0s infinite alternate;-webkit-animation:updown 3s ease-in-out 0s infinite alternate}
+.box1{position:absolute;top:21%;left:11%;width:37%;animation:updown 4s ease-in-out .5s infinite alternate;-webkit-animation:updown 4s ease-in-out .5s infinite alternate}
+.box2{position:absolute;top:13%;left:43%;width:15%;animation:updown 2s ease-in-out 1s infinite alternate;-webkit-animation:updown 2s ease-in-out 1s infinite alternate}
+.box3{position:absolute;top:32%;left:63%;width:23%;animation:updown 5s ease-in-out .2s infinite alternate;-webkit-animation:updown 5s ease-in-out .2s infinite alternate}
+.shadow{position:absolute;top:96%;left:35%;width:30%;animation:updown 3s ease-in-out 0s infinite alternate;-webkit-animation:updown 3s ease-in-out 0s infinite alternate}
+.link_baojian{position:absolute;top:68%;left:2%;width:45%;height:21%}
+.link_baojian img{position:absolute;right:0;width:56%}
+.en_link_baojian{top:68%;left:-6%;width:43%}
+.link_jiankang{position:absolute;top:22%;left:37%;width:54%;height:26%}
+.link_jiankang img{width:49%}
+.en_link_jiankang{top:22%;left:31%;width:48%}
+.tree{position:absolute;top:9.3%;left:13%;width:73%}
+.link_yigan{position:absolute;top:15.8%;left:12%;z-index:999;width:30.6%}
+.link_yigan img{width:110%}
+.en_link_yigan{top:13.2%;left:13%;width:28.6%}
+.leaf1{position:absolute;top:18.8%;left:15%;z-index:999;width:26.6%;animation:scale2 4s linear 1s infinite alternate;-webkit-animation:scale2 4s linear 1s infinite alternate}
+.link_beike{position:absolute;top:8.4%;left:67%;z-index:999;width:17%}
+.link_beike img{width:110%}
+.en_link_beike{top:8.4%;left:66%;width:18%}
+.leaf2{position:absolute;top:12%;left:63%;z-index:999;width:25%;animation:scale2 5s linear .2s infinite alternate;-webkit-animation:scale2 5s linear .2s infinite alternate}
+.link_zhiyuanzhe{position:absolute;top:33%;left:3.4%;z-index:999;width:29%}
+.link_zhiyuanzhe img{width:110%}
+.en_link_zhiyuanzhe{top:33%;left:2.7%;width:28%}
+.leaf3{position:absolute;top:39%;left:7%;z-index:999;width:23%;animation:scale2 2s linear 2.4s infinite alternate;-webkit-animation:scale2 2s linear 2.4s infinite alternate}
+.link_xiangmu{position:absolute;top:38.1%;left:40.2%;z-index:999;width:18%}
+.link_xiangmu img{width:110%}
+.en_link_xiangmu{top:38.5%;left:36.9%;width:23%}
+.leaf4{position:absolute;top:42%;left:34%;z-index:999;width:32%;animation:scale2 4s linear .6s infinite alternate;-webkit-animation:scale2 4s linear .6s infinite alternate}
+.link_aizibing{position:absolute;top:29.2%;left:63.5%;z-index:999;width:27%}
+.link_aizibing img{width:110%}
+.en_link_aizibing{top:27.2%;left:62.4%;width:31%}
+.leaf5{position:absolute;top:33.1%;left:67%;z-index:999;width:23%;animation:scale2 7s linear .2s infinite alternate;-webkit-animation:scale2 7s linear .2s infinite alternate}
+.link_kangzhen{position:absolute;top:54.5%;left:15.5%;z-index:999;width:20%}
+.link_kangzhen img{width:100%}
+.en_link_kangzhen{top:54.5%;left:10.3%;width:30%}
+.leaf6{position:absolute;top:58%;left:12%;z-index:999;width:26%;animation:scale2 6s linear .1s infinite alternate;-webkit-animation:scale2 6s linear .1s infinite alternate}
+.link_qiyezeren{position:absolute;top:56.8%;left:61.7%;z-index:999;width:28%}
+.link_qiyezeren img{width:100%}
+.en_link_qiyezeren{top:56.8%;left:57.7%;width:35%}
+.leaf7{position:absolute;top:61%;left:61%;z-index:999;width:28%;animation:scale2 4s linear .5s infinite alternate;-webkit-animation:scale2 4s linear .5s infinite alternate}
+.leaf8{position:absolute;top:1%;left:38%;z-index:999;width:26%}
+.car{position:absolute;top:75.8%;left:0;overflow:hidden;width:100%;height:17%}
+.zeren_car1{position:absolute;top:41.8%;left:-18%;width:17%;animation:translateCar1 10s linear 0s infinite;-webkit-animation:translateCar1 10s linear 0s infinite}
+.zeren_car2{position:absolute;top:4.4%;right:-18%;width:17%;animation:translateCar2 16s linear 0s infinite;-webkit-animation:translateCar2 16s linear 0s infinite}
+.zeren_cloud1{position:absolute;top:28.4%;left:64%;z-index:1;width:35%;animation:cloud 10s linear 0s infinite alternate;-webkit-animation:cloud 10s linear 0s infinite alternate}
+.zeren_cloud2{position:absolute;top:9.4%;left:76%;width:23%;animation:translateXLeft 14s linear 2s infinite alternate;-webkit-animation:translateXLeft 14s linear 2s infinite alternate}
+.zeren_cloud3{position:absolute;top:12.4%;left:-15%;width:37%;animation:translateXRight 18s linear 3s infinite alternate;-webkit-animation:translateXRight 18s linear 3s infinite alternate}
+.link_guzhu{position:absolute;top:5.1%;left:33.9%;width:23.2%;height:24%}
+.link_guzhu img{position:absolute;left:0;width:97%}
+.en_link_guzhu{top:5.1%;left:39%;width:24.2%}
+.rencai_cloud1{position:absolute;top:27.4%;left:19%;z-index:1;width:13%;animation:cloud 10s linear 0s infinite alternate;-webkit-animation:cloud 10s linear 0s infinite alternate}
+.rencai_cloud2{position:absolute;top:49.4%;left:38%;width:19%;animation:translateXLeft 14s linear 2s infinite alternate;-webkit-animation:translateXLeft 14s linear 2s infinite alternate}
+.rencai_cloud3{position:absolute;top:18.4%;left:0;width:16%;animation:translateXLeft 18s linear 3s infinite alternate;-webkit-animation:translateXLeft 18s linear 3s infinite alternate}
+.rencai_cloud4{position:absolute;top:1.4%;left:64%;width:29%;animation:cloud 10s linear 0s infinite alternate;-webkit-animation:cloud 10s linear 0s infinite alternate}
+.rencai_cloud5{position:absolute;top:71.1%;left:5%;z-index:5;width:47%;animation:cloud 18s linear 3s infinite alternate;-webkit-animation:cloud 18s linear 3s infinite alternate}
+.rencai_cloud6{position:absolute;top:71.8%;left:-15%;z-index:4;width:37%;animation:cloud 18s linear 3s infinite alternate;-webkit-animation:cloud 18s linear 3s infinite alternate}
+.rencai_email{position:absolute;top:55.8%;left:36%;width:11%;animation:updown 5s linear 2s infinite alternate;-webkit-animation:updown 5s linear 2s infinite alternate}
+.rencai_huojian2{position:absolute;top:51.7%;left:52%;z-index:8;width:31.7%}
+.rencai_huojian{position:absolute;top:46.4%;left:78%;z-index:9;width:16%;animation:updown2 1s linear 0s infinite alternate;-webkit-animation:updown2 1s linear 0s infinite alternate}
+.star{position:absolute;top:10%;left:35%;width:10%;animation:scale 1s linear 0s infinite alternate;-webkit-animation:scale 1s linear 0s infinite alternate}
+.star img{width:100%}
+.rencai_tanhao1{position:absolute;top:20.4%;left:0;width:4%;transform:rotate(-27deg)}
+.rencai_tanhao2{position:absolute;top:15.2%;left:2.8%;width:4%;transform:rotate(4deg);animation:fadein 2s linear .7s both;-webkit-animation:fadein 2s linear .7s both}
+.rencai_tanhao3{position:absolute;top:12.5%;left:9.7%;width:4%;transform:rotate(28deg);animation:fadein 2s linear 1.4s both;-webkit-animation:fadein 2s linear 1.4s both}
+.rencai_tanhao4{position:absolute;top:12.2%;left:19%;width:4%;transform:rotate(69deg);animation:fadein 2s linear 2.1s both;-webkit-animation:fadein 2s linear 2.1s both}
+.rencai_tanhao5{position:absolute;top:15.4%;left:27%;width:4%;transform:rotate(106deg);animation:fadein 2s linear 2.8s both;-webkit-animation:fadein 2s linear 2.8s both}
+.rencai_tanhao6{position:absolute;top:21%;left:29.5%;width:4%;transform:rotate(146deg);animation:fadein 2s linear 3.5s both;-webkit-animation:fadein 2s linear 3.5s both}
+.rencai_setting{position:absolute;top:54.4%;left:11%;width:7%;animation:updown 3s linear 0s infinite alternate;-webkit-animation:updown 3s linear 0s infinite alternate}
+.rencai_paper{position:absolute;top:61.4%;left:0;width:14%;animation:updown 1.5s linear 1s infinite alternate;-webkit-animation:updown 1.5s linear 1s infinite alternate}
+.rencai_tizi{position:absolute;top:77.4%;left:31%;z-index:8;width:7%}
+.rencai_fangdajing{position:absolute;top:58.4%;left:11%;z-index:4;width:31%}
+.rencai_cloth{position:absolute;top:44.2%;left:12.4%;width:20%}
+.link_rencaijiazhi{position:absolute;top:5.2%;left:.4%;width:29%;height:27%}
+.link_rencaijiazhi img{position:absolute;left:9%;width:92%}
+.en_link_rencaijiazhi{top:5.2%;left:4%;width:32%}
+.link_yumojujin{position:absolute;top:29.3%;left:68.8%;width:29%;height:40%}
+.link_yumojujin img{width:80%}
+.en_link_yumojujin{top:29.3%;left:67.8%;width:32%}
+.en_link_yumojujin img{width:89%}
+.link_zhaopin{position:absolute;top:43.5%;left:2.4%;z-index:99;width:55%;height:35%}
+.link_zhaopin img{position:absolute;right:-9%;bottom:30%;width:50%}
+.en_link_zhaopin{top:43.5%;left:1%;width:57%}
+.en_link_zhaopin img{position:absolute;right:27%;bottom:-10%;width:50%}
+.shouce_cloud1{position:absolute;top:30.6%;left:-3.6%;width:25%;animation:translateXLeft 18s linear 0s infinite alternate;-webkit-animation:translateXLeft 18s linear 0s infinite alternate}
+.shouce_cloud2{position:absolute;top:55.4%;left:42%;width:19%;animation:translateXRight 10s linear 3s infinite alternate;-webkit-animation:translateXRight 10s linear 3s infinite alternate}
+.shouce_cloud3{position:absolute;top:2.5%;left:63.4%;width:30%;animation:cloud 18s linear 1.3s infinite alternate;-webkit-animation:cloud 13s linear 1.3s infinite alternate}
+.shouce_cloud4{position:absolute;top:52.5%;left:1.4%;width:13%;animation:cloud 8s linear 1s infinite alternate;-webkit-animation:cloud 8s linear 1s infinite alternate}
+.shouce_cloud5{position:absolute;top:83.5%;left:40%;width:16%;animation:translateXRight 10s linear .5s infinite alternate;-webkit-animation:translateXRight 10s linear .5s infinite alternate}
+.shouce_fangdajing{position:absolute;top:60.5%;left:31.4%;width:17%;transform-origin:50px 50px;animation:animX 5s cubic-bezier(.36,0,.64,1) -2s infinite alternate,animY 4s cubic-bezier(.36,0,.64,1) 0s infinite alternate;-webkit-animation:animX 5s cubic-bezier(.36,0,.64,1) -2s infinite alternate,animY 4s cubic-bezier(.36,0,.64,1) 0s infinite alternate}
+.shouce_thing1{position:absolute;top:58.5%;left:11.4%;width:14%;animation:shake 4s infinite;-webkit-animation:shake 4s infinite}
+.shouce_thing2{position:absolute;top:70.5%;left:30.4%;width:5%;animation:updown 3s ease-in-out 0s infinite alternate;-webkit-animation:updown 3s ease-in-out 0s infinite alternate}
+.yixueshouce{position:absolute;top:26.9%;left:27.4%;width:17%;animation:updown 3s ease-in-out 1s infinite alternate;-webkit-animation:updown 3s ease-in-out 1s infinite alternate}
+.link_yiliaoshouce{position:absolute;top:13.4%;left:37.4%;width:49%;height:28%}
+.link_yiliaoshouce img{position:absolute;top:0;right:0;width:43%}
+.en_link_yiliaoshouce img{position:absolute;top:0;right:18%;width:26%}
+.link_yiweida{position:absolute;top:53.5%;left:32.4%;width:55%;height:25%}
+.link_yiweida img{position:absolute;right:0;width:33%}
+.en_link_yiweida img{position:absolute;right:42%;width:29.7%}
+.white1{position:absolute;top:69.5%;left:23.4%;width:1.4%;animation:updown 2.3s ease-in-out 0s infinite alternate;-webkit-animation:updown 2.3s ease-in-out .2s infinite alternate}
+.white2{top:72.5%;left:27.4%;width:1.4%;osition:absolute;animation:updown 5s ease-in-out 0s infinite alternate;-webkit-animation:updown 5s ease-in-out 0s infinite alternate}
+.white3{position:absolute;top:73.5%;left:25.4%;width:1.5%;animation:updown 6s ease-in-out .5s infinite alternate;-webkit-animation:updown 6s ease-in-out .5s infinite alternate}
+.white4{position:absolute;top:71.5%;left:22.4%;width:1.2%;animation:updown 4s ease-in-out .2s infinite alternate;-webkit-animation:updown 4s ease-in-out .2s infinite alternate}
+.white5{position:absolute;top:71.5%;left:25.4%;width:1.2%;animation:updown 3s ease-in-out 0s infinite alternate;-webkit-animation:updown 3s ease-in-out 0s infinite alternate}
+.touxiang{position:absolute;top:3.7%;left:5%;width:39.9%}
+.shiming_cloud{position:absolute;top:17.7%;left:53%;overflow:hidden;width:38.9%;height:43.1%}
+.shiming_cloud1{position:absolute;top:5.5%;left:-5.6%;width:56%;animation:translateXRight 18s linear 1.3s infinite alternate;-webkit-animation:translateXRight 18s linear 1.3s infinite alternate}
+.shiming_cloud2{position:absolute;top:34.9%;left:42.4%;width:44%;animation:cloud 13s linear .3s infinite alternate;-webkit-animation:cloud 13s linear .3s infinite alternate}
+.shiming_cloud3{position:absolute;top:15.5%;left:51.4%;width:26%;animation:translateXRight 10s linear 1s infinite alternate;-webkit-animation:translateXRight 10s linear 1s infinite alternate}
+.shiming_cloud4{position:absolute;top:37.2%;left:9.4%;width:45%;animation:cloud 12s linear .5s infinite alternate;-webkit-animation:cloud 12s linear .5s infinite alternate}
+.shiming_cloud5{position:absolute;top:58.5%;left:32.4%;width:41%;animation:translateXRight 13s linear 1.3s infinite alternate;-webkit-animation:translateXRight 13s linear 1.3s infinite alternate}
+.shiming_pc{position:absolute;top:58%;left:32.4%;width:42%}
+.shiming_light{position:absolute;top:62.5%;left:5.4%;width:31%}
+.shiming_clock{position:absolute;top:62.5%;left:76.4%;width:22%}
+.link_shangyedaode{position:absolute;top:57.5%;left:32.4%;width:53%;height:24%}
+.link_shangyedaode img{position:absolute;right:0;bottom:0;width:60%}
+.en_link_shangyedaode img{right:10%;width:48%}
+.link_shiming2{position:absolute;top:2.5%;left:50.4%;width:43%;height:54%}
+.link_shiming2 img{position:absolute;left:21%;width:62%}
+.en_link_shiming2{top:2.5%;left:48.4%;width:48%}
+.earthMap{position:absolute;top:47.5%;left:10%;width:45%}
+.earthMap img{width:100%}
+.gaikuang_map{position:absolute;top:4.4%;left:13%;z-index:99;display:block;overflow:hidden;width:74%;height:37.7%}
+.map{position:absolute;top:21%;left:1%;width:99%}
+.gaikuang_cloud1{position:absolute;top:15.9%;left:25.4%;width:11%;animation:cloud 8s linear .3s infinite alternate;-webkit-animation:cloud 8s linear .3s infinite alternate}
+.gaikuang_cloud2{position:absolute;top:17.9%;left:45.4%;width:15%;animation:translateXRight 13s linear .3s infinite alternate;-webkit-animation:translateXRight 13s linear .3s infinite alternate}
+.gaikuang_cloud3{position:absolute;top:23.9%;left:55.4%;width:13%;animation:cloud 8s linear .5s infinite alternate;-webkit-animation:cloud 8s linear .5s infinite alternate}
+.gaikuang_cloud4{position:absolute;top:28.9%;left:7.4%;z-index:99;width:17%;animation:translateXRight 10s linear 1.3s infinite alternate;-webkit-animation:translateXRight 10s linear 1.3s infinite alternate}
+.gaikuang_thing1{position:absolute;top:43.6%;left:41.4%;width:7%;animation:updown 4s ease-in-out .2s infinite alternate;-webkit-animation:updown 4s ease-in-out .2s infinite alternate}
+.gaikuang_thing2{position:absolute;top:49.9%;left:40.4%;width:3%;animation:updown 2s ease-in-out .3s infinite alternate;-webkit-animation:updown 2s ease-in-out .3s infinite alternate}
+.gaikuang_thing3{position:absolute;top:49.9%;left:46.6%;width:2.4%;animation:updown 5s ease-in-out .2s infinite alternate;-webkit-animation:updown 5s ease-in-out .2s infinite alternate}
+.gaikuang_thing4{position:absolute;top:52.9%;left:43.4%;width:2.1%;animation:updown 3s ease-in-out .5s infinite alternate;-webkit-animation:updown 3s ease-in-out .5s infinite alternate}
+.gaikuang_thing5{position:absolute;top:53.9%;left:48.4%;width:1.8%;animation:updown 4s ease-in-out 0s infinite alternate;-webkit-animation:updown 4s ease-in-out 0s infinite alternate}
+.gaikuang_light{position:absolute;top:-3%;left:35%;z-index:9;width:30%}
+.gaikuang_earth{position:absolute;top:53.1%;left:17.4%;z-index:99;width:34%;animation:rotate 20s 0s infinite linear;-webkit-animation:rotate 20s 0s infinite linear}
+.map_turn{position:absolute;top:11%;left:15.4%;z-index:88;width:74%;height:33%}
+.map_turn1{position:absolute;bottom:0;left:0;width:100%}
+.link_inEarth{position:absolute;top:45%;left:12.4%;width:26%}
+.link_inEarth img{width:110%}
+.en_link_inEarth{top:46%;left:16.4%;width:23%}
+.link_qiyerongyu{position:absolute;top:15.4%;left:72.2%;z-index:200;width:20%;height:22%}
+.en_link_qiyerongyu{top:18%;left:72.9%;width:19.7%}
+.link_qiyerongyu img{width:100%}
+.link_shipin{position:absolute;top:41%;left:72.4%;width:20%;height:20%}
+.link_shipin img{width:100%}
+.en_link_shipin{top:43%;left:72.4%;width:20%}
+.link_inChina{position:absolute;top:20%;left:.4%;width:28.5%;height:55%}
+.link_inChina img{width:120%}
+.en_link_inChina{top:20%;left:4.4%;width:23.5%}
+.link_inChina2{position:absolute;top:6%;left:13.3%;width:51.5%;height:30%}
+.link_inChina2 img{position:absolute;left:27%;width:53%}
+.en_link_inChina2{top:6%;left:20.3%;width:39.5%}
+.mod-orient-layer{position:fixed;top:0;right:0;bottom:0;left:0;z-index:9999;display:none;width:100%;height:100%;background:#fff}
+.mod-orient-layer_content{position:absolute;top:25%;width:100%;text-align:center}
+.mod-orient-layer_icon-orient{display:inline-block;margin-bottom:40px;width:50px;height:50px;background:url(../img/tip.png) no-repeat;background-size:100% 100%;-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-animation:rotation infinite 1.5s ease-in-out;animation:rotation infinite 1.5s ease-in-out}
+.mod-orient-layer_desc{margin-top:5px;color:#47c0ba;font-size:14px}
+.text{margin:0 auto;color:#47c0ba;font-weight:700;font-size:20px;line-height:22px}
+.text1{padding-bottom:40px}
+@-webkit-keyframes rotation{10%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+50%,60%{-webkit-transform:rotate(0);transform:rotate(0)}
+90%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+100%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+}
+@keyframes rotation{10%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+50%,60%{-webkit-transform:rotate(0);transform:rotate(0)}
+90%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+100%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+}
+#container{position:absolute;top:0;left:0;z-index:5;overflow:hidden;margin:0 auto;width:100%;height:100%}
+#list{position:absolute;border:1px solid red}
+#list li{float:left;background:#fff;-webkit-transition:all 2s;-moz-transition:all 2s;-o-transition:all 2s;transition:all 2s}
+#list li img{width:200px}
+@keyframes updown{from{transform:translate3d(0,-5px,0)}
+to{transform:translate3d(0,5px,0)}
+}
+@-webkit-keyframes updown{from{-webkit-transform:translate3d(0,-5px,0)}
+to{-webkit-transform:translate3d(0,5px,0)}
+}
+@keyframes rotatecb{from{transform:rotate(-15deg);transform-origin:center bottom}
+to{transform:rotate(15deg);transform-origin:center bottom}
+}
+@-webkit-keyframes rotatecb{from{-webkit-transform:rotate(-15deg);-webkit-transform-origin:center bottom}
+to{-webkit-transform:rotate(15deg);-webkit-transform-origin:center bottom}
+}
+@keyframes rotate{from{transform:rotate(-15deg);transform-origin:center bottom}
+to{transform:rotate(15deg);transform-origin:center bottom}
+}
+@-webkit-keyframes rotate{from{-webkit-transform:rotate(-15deg);-webkit-transform-origin:center bottom}
+to{-webkit-transform:rotate(15deg);-webkit-transform-origin:center bottom}
+}
+@keyframes fadein{0%{opacity:0}
+25%{opacity:1}
+100%{opacity:1}
+}
+@-webkit-keyframes fadein{0%{opacity:0}
+25%{opacity:1}
+100%{opacity:1}
+}
+@keyframes fadein1{0%{opacity:0}
+100%{opacity:1}
+}
+@-webkit-keyframes fadein1{0%{opacity:0}
+100%{opacity:1}
+}
+@keyframes cloud{0%{transform:translateX(0)}
+100%{transform:translateX(-50px)}
+}
+@-webkit-keyframes cloud{0%{transform:translateX(0)}
+100%{transform:translateX(-50px)}
+}
+@keyframes scale{from{transform:scale(0)}
+to{transform:scale(1)}
+}
+@-webkit-keyframes scale{from{-webkit-transform:scale(0)}
+to{-webkit-transform:scale(1)}
+}
+@keyframes ship{0%{transform:translate3d(0,0,0)}
+100%{transform:translate3d(-100px,0,0)}
+}
+@-webkit-keyframes ship{0%{-webkit-transform:translate3d(0,0,0)}
+100%{-webkit-transform:translate3d(-100px,0,0)}
+}
+@keyframes scale2{0%{transform:scale(1)}
+100%{transform:scale(.8)}
+}
+@-webkit-keyframes scale2{0%{-webkit-transform:scale(1)}
+100%{-webkit-transform:scale(.8)}
+}
+@keyframes scale3{0%{transform:scale(.9)}
+100%{transform:scale(1)}
+}
+@-webkit-keyframes scale3{0%{-webkit-transform:scale(.9)}
+100%{-webkit-transform:scale(1)}
+}
+@keyframes e{0%{transform:translateX(0)}
+100%{transform:translateX(-10px)}
+}
+@-webkit-keyframes e{0%{-webkit-transform:translateX(0)}
+100%{-webkit-transform:translateX(-10px)}
+}
+@keyframes shake{0%{transform:rotate(10deg)}
+10%{transform:rotate(-8deg)}
+20%{transform:rotate(10deg)}
+30%{transform:rotate(-6deg)}
+40%{transform:rotate(10deg)}
+50%{transform:rotate(-4deg)}
+60%{transform:rotate(10deg)}
+70%{transform:rotate(-2deg)}
+80%{transform:rotate(10deg)}
+90%{transform:rotate(0)}
+100%{transform:rotate(10deg)}
+}
+@keyframes shake{0%{-webkit-transform:rotate(10deg)}
+10%{-webkit-transform:rotate(-8deg)}
+20%{-webkit-transform:rotate(10deg)}
+30%{-webkit-transform:rotate(-6deg)}
+40%{-webkit-transform:rotate(10deg)}
+50%{-webkit-transform:rotate(-4deg)}
+60%{-webkit-transform:rotate(10deg)}
+70%{-webkit-transform:rotate(-2deg)}
+80%{-webkit-transform:rotate(10deg)}
+90%{-webkit-transform:rotate(0)}
+100%{-webkit-transform:rotate(10deg)}
+}
+@keyframes fadein2{0%{opacity:0}
+100%{opacity:1}
+}
+@-webkit-keyframes fadein2{0%{-webkit-opacity:0}
+100%{-webkit-opacity:1}
+}
+@keyframes fadein2{0%{opacity:0}
+100%{opacity:1}
+}
+@-webkit-keyframes fadein2{0%{-webkit-opacity:0}
+100%{-webkit-opacity:1}
+}
+@keyframes translateCar1{0%{transform:translateX(0)}
+100%{transform:translateX(700px)}
+}
+@-webkit-keyframes translateCar1{0%{-webkit-transform:translateX(0)}
+100%{-webkit-transform:translateX(700px)}
+}
+@keyframes translateCar2{0%{transform:translateX(0)}
+100%{transform:translateX(-700px)}
+}
+@-webkit-keyframes translateCar2{0%{-webkit-transform:translateX(0)}
+100%{-webkit-transform:translateX(-700px)}
+}
+@keyframes translateXLeft{0%{transform:translateX(0)}
+100%{transform:translateX(-150px)}
+}
+@-webkit-keyframes translateXLeft{0%{-webkit-transform:translateX(0)}
+100%{-webkit-transform:translateX(-150px)}
+}
+@keyframes translateXRight{0%{transform:translateX(0)}
+100%{transform:translateX(50px)}
+}
+@-webkit-keyframes translateXRight{0%{-webkit-transform:translateX(0)}
+100%{-webkit-transform:translateX(50px)}
+}
+@keyframes updown2{from{transform:translate3d(5px,-5px,0)}
+to{transform:translate3d(-5px,5px,0)}
+}
+@-webkit-keyframes updown2{from{-webkit-transform:translate3d(5px,-5px,0)}
+to{-webkit-transform:translate3d(-5px,5px,0)}
+}
+@keyframes shake{0%{transform:rotate(10deg)}
+10%{transform:rotate(-8deg)}
+20%{transform:rotate(10deg)}
+30%{transform:rotate(-6deg)}
+40%{transform:rotate(10deg)}
+50%{transform:rotate(-4deg)}
+60%{transform:rotate(10deg)}
+70%{transform:rotate(-2deg)}
+80%{transform:rotate(10deg)}
+90%{transform:rotate(0)}
+100%{transform:rotate(10deg)}
+}
+@-webkit-keyframes shake{0%{-webkit-transform:rotate(10deg)}
+10%{-webkit-transform:rotate(-8deg)}
+20%{-webkit-transform:rotate(10deg)}
+30%{-webkit-transform:rotate(-6deg)}
+40%{-webkit-transform:rotate(10deg)}
+50%{-webkit-transform:rotate(-4deg)}
+60%{-webkit-transform:rotate(10deg)}
+70%{-webkit-transform:rotate(-2deg)}
+80%{-webkit-transform:rotate(10deg)}
+90%{-webkit-transform:rotate(0)}
+100%{-webkit-transform:rotate(10deg)}
+}
+@keyframes animX{0%{left:32%}
+100%{left:37%}
+}
+@-webkit-keyframes animX{0%{left:32%}
+100%{left:37%}
+}
+@keyframes animY{0%{top:61%}
+100%{top:64%}
+}
+@-webkit-keyframes animY{0%{top:61%}
+100%{top:64%}
+}
+@keyframes transmap{from{transform:translate(100px,0) rotate(-30deg)}
+to{transform:translate(-193px,169px) rotate(-30deg)}
+}
+@-webkit-keyframes transmap{from{-webkit-transform:translate(100px)}
+to{-webkit-transform:translate(0)}
+}
+@keyframes rotate{from{transform:rotate(0);transform-origin:center}
+to{transform:rotate(360deg);transform-origin:center}
+}
+@-webkit-keyframes rotate{from{-webkit-transform:rotate(0);-webkit-transform-origin:center}
+to{-webkit-transform:rotate(360deg);-webkit-transform-origin:center}
 }
-input, textarea {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-}
-
-textarea {
-    resize: none;
-    overflow: auto;
-}
-
-em {
-    font-style: normal;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-h1, p, h2 {
-    margin: 0;
-    font-weight: normal;
-}
-
-a, input {
-    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
-}
-
-img {
-    border: none;
-    vertical-align: top;
-}
-
-body {
-    margin: 0;
-    position: relative;
-    font-family: Arial, "微软雅黑";
-    color: #666;
-    font-size: 26px;
-    overflow: hidden;
-}
-
-/*container*/
-
-.container {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    min-width: 300px;
-    overflow: hidden;
-}
-
-.container .bgd {
-    width: 100%;
-    height: 100%;
-}
-
-/*translate*/
-.translate {
-    z-index: 999;
-    position: absolute;
-    right: 6%;
-    top: 3%;
-    width: 12%;
-}
-
-.chanpin_img {
-    position: absolute;
-    left: 2%;
-    top: 43%;
-    width: 37.3%;
-}
-
-.yixue_img {
-    position: absolute;
-    left: 56%;
-    top: 55%;
-    width: 21.3%;
-}
-
-.book_img {
-    position: absolute;
-    left: 14%;
-    top: 68%;
-    width: 25.3%;
-}
-
-.people_img {
-    position: absolute;
-    left: 3.6%;
-    top: 77%;
-    width: 21.6%;
-}
-
-.keyan_img {
-    position: absolute;
-    left: 69%;
-    top: 68%;
-    width: 28.6%;
-}
-
-.translate img {
-    width: 100%;
-}
-
-/*earth*/
-.earth {
-    position: absolute;
-    right: 4%;
-    top: 32%;
-    width: 31%;
-    height: 20%;
-
-    animation: updown 2s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 2s ease-in-out 0s infinite alternate;
-}
-
-.earthimg {
-    position: absolute;
-    right: 11%;
-    width: 91%;
-}
-
-.earth_bottom {
-    position: absolute;
-    right: 0%;
-    top: 38%;
-    width: 40%;
-}
-
-.leaf {
-    position: absolute;
-    right: 38%;
-    top: -22%;
-    width: 37%;
-    animation: rotatecb 2s linear 0s infinite alternate;
-    -webkit-animation: rotatecb 2s linear 0s infinite alternate;
-
-}
-
-.heartbig {
-    position: absolute;
-    top: 29%;
-    left: -65%;
-    width: 137%;
-}
-
-.heart {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    width: 15%;
-
-}
-
-.heart {
-    position: absolute;
-    top: 12%;
-    left: 18%;
-    width: 17%;
-    height: 20%;
-}
-
-.heart1 {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    width: 30%;
-    animation: updown 1.5s linear 0s infinite alternate;
-    -webkit-animation: updown 1.5s linear 0s infinite alternate;
-}
-
-.heart2 {
-    position: absolute;
-    top: 17%;
-    right: 48%;
-    width: 17%;
-    transform: rotate(-25deg);
-    animation: updown 1.5s linear 0s infinite alternate;
-    -webkit-animation: updown 1.5s linear 0s infinite alternate;
-}
-
-.heart3 {
-    position: absolute;
-    top: 28%;
-    right: 13%;
-    width: 14%;
-    transform: rotate(4deg);
-    animation: updown 1.5s linear 0s infinite alternate;
-    -webkit-animation: updown 1.5s linear 0s infinite alternate;
-}
-
-.heart4 {
-    position: absolute;
-    top: 29%;
-    right: 39%;
-    width: 23%;
-    transform: rotate(-10deg);
-    animation: updown 1.5s linear 0s infinite alternate;
-    -webkit-animation: updown 1.5s linear 0s infinite alternate;
-}
-
-.ball {
-    position: absolute;
-    top: 63%;
-    height: 30%;
-    width: 14%;
-    right: 3%;
-
-}
-
-.ball1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 25%;
-    animation: updown 1.2s 0s infinite alternate;
-    -webkit-animation: updown 1.2s 0s infinite alternate;
-}
-
-.ball2 {
-    position: absolute;
-    left: 48%;
-    top: 33%;
-    width: 14%;
-    animation: updown 1.7s infinite alternate;
-    -webkit-animation: updown 1.7s infinite alternate;
-}
-
-@keyframes updown {
-    from {
-        transform: translate3d(0, -5px, 0);
-    }
-    to {
-        transform: translate3d(0, 5px, 0);
-    }
-}
-
-@-webkit-keyframes updown {
-    from {
-        -webkit-transform: translate3d(0, -5px, 0);
-    }
-    to {
-        -webkit-transform: translate3d(0, 5px, 0);
-    }
-}
-
-@keyframes rotatecb {
-    from {
-        transform-origin: center bottom;
-        transform: rotate(-15deg);
-    }
-    to {
-        transform-origin: center bottom;
-        transform: rotate(15deg);
-    }
-}
-
-@-webkit-keyframes rotatecb {
-    from {
-        -webkit-transform-origin: center bottom;
-        -webkit-transform: rotate(-15deg);
-    }
-    to {
-        -webkit-transform-origin: center bottom;
-        -webkit-transform: rotate(15deg);
-    }
-}
-
-@keyframes rotate {
-    from {
-        transform-origin: center bottom;
-        transform: rotate(-15deg);
-    }
-    to {
-        transform-origin: center bottom;
-        transform: rotate(15deg);
-    }
-}
-
-@-webkit-keyframes rotate {
-    from {
-        -webkit-transform-origin: center bottom;
-        -webkit-transform: rotate(-15deg);
-    }
-    to {
-        -webkit-transform-origin: center bottom;
-        -webkit-transform: rotate(15deg);
-    }
-}
-
-/*talk*/
-.container .talkleft {
-    position: absolute;
-    left: 0%;
-    top: 76.6%;
-    width: 9%;
-    height: 3%;
-    animation: fadein 2.8s linear 0s both;
-    -webkit-animation: fadein 2.8s linear 0s both;
-}
-
-.container .talkleft img,
-.container .talkright img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-.container .talkright {
-    position: absolute;
-    left: 25%;
-    top: 76.6%;
-    width: 9%;
-    animation: fadein 2.8s linear 2.8s both;
-    -webkit-animation: fadein 2.8s linear 2.8s both;
-}
-
-.dot {
-    width: 0.185em;
-    height: 0.185em;
-    border-radius: 50%;
-    background-color: #a0a1a1;
-    position: absolute;
-}
-
-.container .dot1 {
-    left: 0.148em;
-    top: 0.250em;
-    animation: fadein 2.8s linear .7s both;
-    -webkit-animation: fadein 2.8s linear .7s both;
-}
-
-.container .dot2 {
-    left: 0.554em;
-    top: 0.250em;
-    animation: fadein 2.8s linear 1.4s both;
-    -webkit-animation: fadein 2.8s linear 1.4s both;
-}
-
-.container .dot3 {
-    left: 0.9148em;
-    top: 0.250em;
-    animation: fadein 2.8s linear 2.1s both;
-    -webkit-animation: fadein 2.8s linear 2.1s both;
-}
-
-.container .dot4 {
-    left: 0.248em;
-    top: 0.250em;
-    animation: fadein 2.8s linear 3.5s both;
-    -webkit-animation: fadein 2.8s linear 3.5s both;
-}
-
-.container .dot5 {
-    left: 0.5814em;
-    top: 0.250em;
-    animation: fadein 2.8s linear 4.2s both;
-    -webkit-animation: fadein 2.8s linear 4.2s both;
-}
-
-.container .dot6 {
-    left: 0.9148em;
-    top: 0.250em;
-    animation: fadein 2.8s linear 4.9s both;
-    -webkit-animation: fadein 2.8s linear 4.9s both;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadein1 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein1 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/*water*/
-.water {
-    position: absolute;
-    width: 17%;
-    top: 37%;
-    left: 14%;
-    height: 25%;
-    z-index: 999;
-
-}
-
-.water1 {
-    position: absolute;
-    bottom: 7%;
-    left: 34%;
-    width: 9%;
-    animation: scale 0.8s linear 0s infinite alternate;
-    -webkit-animation: scale 0.8s linear 0s infinite alternate;
-}
-
-.water2 {
-    position: absolute;
-    bottom: 14%;
-    left: 36%;
-    width: 6%;
-    animation: scale 0.6s linear 0.1s infinite alternate;
-    -webkit-animation: scale 0.6s linear 0.1s infinite alternate
-}
-
-.water3 {
-    position: absolute;
-    bottom: 24%;
-    left: 59%;
-    width: 9%;
-    animation: scale 0.5s linear 0.3s infinite alternate;
-    -webkit-animation: scale 0.5s linear 0.3s infinite alternate;
-}
-
-.water4 {
-    position: absolute;
-    bottom: 43%;
-    left: 50%;
-    width: 6%;
-    animation: scale 0.7s linear 0.2s infinite alternate;
-    -webkit-animation: scale 0.7s linear 0.2s infinite alternate;
-}
-
-.water5 {
-    position: absolute;
-    bottom: 64%;
-    left: 54%;
-    width: 12%;
-    animation: scale 0.7s linear 0.2s infinite alternate;
-    -webkit-animation: scale 0.7s linear 0.2s infinite alternate;
-}
-
-.water6 {
-    position: absolute;
-    bottom: 69%;
-    left: 66%;
-    width: 6%;
-    animation: scale 0.9s linear 0.3s infinite alternate;
-    -webkit-animation: scale 0.9s linear 0.3s infinite alternate;
-}
-
-.water7 {
-    position: absolute;
-    bottom: 83%;
-    left: 49%;
-    width: 10%;
-    animation: scale 0.5s linear 0s infinite alternate;
-    -webkit-animation: scale 0.5s linear 0s infinite alternate;
-}
-
-.water8 {
-    position: absolute;
-    bottom: 90%;
-    left: 46%;
-    width: 7%;
-    animation: scale 2.8s linear 0s infinite alternate;
-    -webkit-animation: scale 2.8s linear 0s infinite alternate;
-}
-
-.water9 {
-    position: absolute;
-    bottom: 90%;
-    left: 76%;
-    width: 6%;
-    animation: scale 1.8s linear 0.3s infinite alternate;
-    -webkit-animation: scale 1.8s linear 0.3s infinite alternate;
-}
-
-.water10 {
-    position: absolute;
-    bottom: 100%;
-    left: 52%;
-    width: 11%;
-    animation: scale 0.8s linear 0.2s infinite alternate;
-    -webkit-animation: scale 0.8s linear 0.2s infinite alternate;
-}
-
-.waterRed {
-    position: absolute;
-    width: 17%;
-    top: 47%;
-    left: 24%;
-    height: 15%;
-    z-index: 999;
-}
-
-@keyframes scale {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-@-webkit-keyframes scale {
-    from {
-        -webkit-transform: scale(0);
-    }
-    to {
-        -webkit-transform: scale(1);
-    }
-}
-
-/*cloud*/
-.cloud {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 35%;
-
-}
-
-.cloud1 {
-    position: absolute;
-    left: 3%;
-    top: 21%;
-    width: 26%;
-    opacity: 0.7;
-    animation: cloud 5s linear 0s infinite alternate;
-    -webkit-animation: cloud 5s linear 0s infinite alternate;
-}
-
-.cloud2 {
-    position: absolute;
-    left: 48%;
-    top: 5%;
-    width: 20%;
-    opacity: 0.8;
-    animation: cloud 8s linear 0.1s infinite alternate;
-    -webkit-animation: cloud 8s linear 0.1s infinite alternate;
-}
-
-.cloud3 {
-    position: absolute;
-    left: 4%;
-    top: 81%;
-    width: 35%;
-    opacity: 0.9;
-    animation: cloud 6s linear 0.2s infinite alternate;
-    -webkit-animation: cloud 6s linear 0.2s infinite alternate;
-}
-
-.cloud4 {
-    position: absolute;
-    left: 71%;
-    top: 58%;
-    width: 23%;
-    opacity: 0.6;
-    animation: cloud 10s linear 0s infinite alternate;
-    -webkit-animation: cloud 10s linear 0s infinite alternate;
-}
-
-@keyframes cloud {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-50px);
-    }
-}
-
-@-webkit-keyframes cloud {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-50px);
-    }
-}
-
-.ship {
-    position: absolute;
-    right: 0;
-    top: 52%;
-    width: 76%;
-    height: 40%;
-
-}
-
-.ship1 {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 10%;
-    animation: cloud 8s linear 0.1s infinite alternate;
-    -webkit-animation: cloud 8s linear 0.1s infinite alternate;
-
-}
-
-.ship2 {
-    position: absolute;
-    top: 84%;
-    right: 55%;
-    width: 13%;
-    animation: cloud 8s linear 0.1s infinite alternate;
-    -webkit-animation: cloud 8s linear 0.1s infinite alternate;
-
-}
-
-@keyframes ship {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-100px, 0, 0);
-    }
-}
-
-@-webkit-keyframes ship {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-100px, 0, 0);
-    }
-}
-
-/*link*/
-@keyframes scale3 {
-    0% {
-        transform: scale(0.9);
-
-    }
-    100% {
-        transform: scale(1);
-
-    }
-}
-
-.link_shiming {
-
-    position: absolute;
-    left: 1.9%;
-    top: 21%;
-    width: 29.3%;
-    height: 6%;
-
-}
-
-.link_shiming img {
-    width: 110%;
-}
-
-.link_gaikuang {
-
-    position: absolute;
-    left: 36.8%;
-    top: 12.6%;
-    width: 20%;
-    height: 21%;
-}
-
-.link_gaikuang img {
-    position: absolute;
-    width: 114.5%;
-    top: 10%;
-}
-.en_link_gaikuang img{
-    width: 142%;
-}
-
-.link_zeren {
-    position: absolute;
-    left: 59.5%;
-    top: 32%;
-    width: 33%;
-    height: 21%;
-
-}
-
-.link_zeren img {
-    position: absolute;
-    top: 26%;
-}
-
-.link_chanpin {
-    position: absolute;
-    left: 11.5%;
-    top: 60%;
-    width: 18%;
-    height: 6%;
-
-}
-.en_link_chanpin{
-    width: 29.7%;
-    left: 5.8%;
-    top: 59.8%;
-
-}
-.link_yixue {
-    position: absolute;
-    left: 55.5%;
-    top: 63%;
-    width: 18%;
-    height: 6%;
-    background-size: 100%;
-
-}
-.en_link_yixue{
-    width: 31.6%;
-    left: 48%;
-}
-
-.link_tushuguan {
-    position: absolute;
-    left: 33.5%;
-    top: 73%;
-    width: 21%;
-    height: 6%;
-
-}
-.en_link_tushuguan{
-    left: 31%;
-    top: 73%;
-    width: 26%;
-}
-.link_rencai {
-    position: absolute;
-    left: 7.5%;
-    top: 87.3%;
-    width: 18%;
-    height: 6%;
-
-}
-.en_link_rencai{
-    left: 4.5%;
-    top: 85.3%;
-    width: 23%;
-}
-.link_keyan {
-    position: absolute;
-    left: 57.5%;
-    top: 85.3%;
-    width: 18%;
-    height: 6%;
-}
-.en_link_keyan{
-    left: 57%;
-    top: 83%;
-    width: 20%;
-
-}
-.link_shiming img, .link_keyan img, .link_rencai img, .link_tushuguan img, .link_yixue img, .link_zeren img, .link_chanpin img {
-    width: 110%;
-}
-
-/*keyan*/
-.bubble {
-    position: absolute;
-    left: 70%;
-    top: 55.8%;
-    width: 20%;
-    height: 5%;
-
-}
-
-.bubble1 {
-    position: absolute;
-    left: 23%;
-    top: 51%;
-    width: 12%;
-    animation: scale 0.8s linear 0s infinite alternate;
-    -webkit-animation: scale 0.8s linear 0s infinite alternate;
-}
-
-.bubble2 {
-    position: absolute;
-    left: 51%;
-    top: 44%;
-    width: 16%;
-    animation: scale 0.8s linear 0.2s infinite alternate;
-    -webkit-animation: scale 0.8s linear 0.2s infinite alternate;
-}
-
-.bubble3 {
-    position: absolute;
-    left: 79%;
-    top: 53%;
-    width: 9%;
-    animation: scale 0.5s linear 0s infinite alternate;
-    -webkit-animation: scale 0.5s linear 0s infinite alternate;
-}
-
-.bubble4 {
-    position: absolute;
-    left: 10%;
-    top: 54%;
-    width: 9%;
-    animation: scale 1s linear 0.3s infinite alternate;
-    -webkit-animation: scale 1s linear 0.3s infinite alternate;
-}
-
-.bubble5 {
-    position: absolute;
-    left: 68%;
-    top: 59%;
-    width: 6%;
-    animation: scale 0.5s linear 0s infinite alternate;
-    -webkit-animation: scale 0.5s linear 0s infinite alternate;
-}
-
-.bubble6 {
-    position: absolute;
-    left: 39%;
-    top: 58%;
-    width: 9%;
-    animation: scale 1s linear 0.3s infinite alternate;
-    -webkit-animation: scale 1s linear 0.3s infinite alternate;
-}
-
-.keyan_left {
-    position: absolute;
-    left: 0;
-    top: 17%;
-    width: 21%;
-    height: 22%;
-}
-
-.keyan_left .left1 {
-    width: 30%;
-    position: absolute;
-    left: 9%;
-    top: 35%;
-    animation: updown 2s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 2s ease-in-out 0s infinite alternate;
-}
-
-.keyan_left .left2 {
-    width: 87%;
-    position: absolute;
-    left: 49%;
-    top: 2%;
-    animation: updown 3s ease-in-out 0.2s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0.2s infinite alternate;
-}
-
-.keyan_left .left3 {
-    width: 30%;
-    position: absolute;
-    left: 10%;
-    top: 72%;
-    animation: updown 2.5s ease-in-out 0.5s infinite alternate;
-    -webkit-animation: updown 2.5s ease-in-out 0.5s infinite alternate;
-}
-
-.keyan_left .left4 {
-    width: 30%;
-    position: absolute;
-    left: 61%;
-    top: 62%;
-    animation: updown 3.5s ease-in-out 0.3s infinite alternate;
-    -webkit-animation: updown 3.5s ease-in-out 0.3s infinite alternate;
-}
-
-.keyan_right {
-
-    position: absolute;
-    right: 0;
-    top: 18%;
-    width: 44%;
-    height: 22%;
-}
-
-.keyan_right .right1 {
-    width: 30%;
-    position: absolute;
-    left: 9%;
-    top: 11%;
-    animation: scale2 3s linear 0.2s infinite alternate;
-    -webkit-animation: scale2 3s linear 0.2s infinite alternate;
-}
-
-.keyan_right .right2 {
-    width: 30%;
-    position: absolute;
-    left: 69%;
-    top: 4%;
-    animation: scale2 4s linear 0.1s infinite alternate;
-    -webkit-animation: scale2 4s linear 0.1s infinite alternate;
-}
-
-.keyan_right .right3 {
-    width: 28%;
-    position: absolute;
-    left: 0%;
-    top: 55%;
-    animation: scale2 3.5s linear 0.3s infinite alternate;
-    -webkit-animation: scale2 3.5s linear 0.3s infinite alternate;
-}
-
-.keyan_right .right4 {
-    width: 28%;
-    position: absolute;
-    left: 29%;
-    top: 76%;
-    animation: scale2 4s linear 0.2s infinite alternate;
-    -webkit-animation: scale2 4s linear 0.2s infinite alternate;
-}
-
-.keyan_right .right5 {
-    width: 38%;
-    position: absolute;
-    left: 37%;
-    top: 33%;
-    animation: scale2 3s linear 0.4s infinite alternate;
-    -webkit-animation: scale2 3s linear 0.4s infinite alternate;
-}
-
-.keyan_right .right6 {
-    width: 38%;
-    position: absolute;
-    left: 60%;
-    top: 72%;
-    animation: scale2 5s linear 0.2s infinite alternate;
-    -webkit-animation: scale2 5s linear 0.2s infinite alternate;
-}
-
-@keyframes scale2 {
-    0% {
-        transform: scale(1);
-
-    }
-    100% {
-        transform: scale(0.8);
-
-    }
-}
-
-/*keyanlink*/
-.link_yimiao {
-
-    height: 30%;
-    position: absolute;
-    width: 23%;
-    top: 7.5%;
-    left: 2%;
-
-}
-
-.link_yimiao img {
-    width: 120%;
-}
-
-.en_link_yimiao{
-    width: 28.2%;
-    top: 7.5%;
-    left: 7.2%;
-}
-.link_xinyaoyan {
-    height: 31%;
-    position: absolute;
-    width: 64%;
-    top: 12%;
-    left: 35%;
-}
-
-.link_xinyaoyan img {
-    width: 55%;
-}
-.en_link_xinyaoyan{
-    width: 47.7%;
-    top: 13%;
-    left: 38%;
-}
-/*tushuguan*/
-.tushuguan_heart {
-    position: absolute;
-    width: 46%;
-    height: 19%;
-    top: 2%;
-    left: 24%;
-
-}
-
-.thing1 {
-    position: absolute;
-    left: 10%;
-    top: 32%;
-    width: 16%;
-    animation: updown 2.5s ease-in-out 0.5s infinite alternate;
-    -webkit-animation: updown 2.5s ease-in-out 0.5s infinite alternate;
-
-}
-
-.thing2 {
-    position: absolute;
-    left: 12%;
-    top: 69%;
-    width: 20%;
-    animation: updown 2s ease-in-out 0.1s infinite alternate;
-    -webkit-animation: updown 2s ease-in-out 0.1s infinite alternate;
-
-}
-
-.thing3 {
-    position: absolute;
-    left: 70%;
-    top: 27%;
-    width: 17%;
-    animation: updown 3s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0s infinite alternate;
-
-}
-
-.thing4 {
-    position: absolute;
-    left: 71%;
-    top: 69%;
-    width: 15%;
-    animation: updown 2.5s ease-in-out 0.5s infinite alternate;
-    -webkit-animation: updown 2.5s ease-in-out 0.5s infinite alternate;
-
-}
-
-.tushuguan_heart1 {
-    position: absolute;
-    left: 37%;
-    top: 20%;
-    width: 28%;
-    animation: scale2 3s linear 0s infinite alternate;
-    -webkit-animation: scale2 3s linear 0s infinite alternate;
-
-}
-
-/*@keyframes scale4 {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
-@-webkit-keyframes scale4 {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}*/
-.link_xinyao {
-    position: absolute;
-    height: 23%;
-    left: 25%;
-    top: 4%;
-    width: 71%;
-
-}
-
-.link_xinyao img {
-    width: 51%;
-    position: absolute;
-    right: -9px;
-    top: -10%;
-}
-.en_link_xinyao{
-    left: 15%;
-    top: 4%;
-    width: 73%;
-}
-.link_shouce {
-    position: absolute;
-    height: 30%;
-    left: 52%;
-    top: 62%;
-    width: 47%;
-
-}
-
-.link_shouce img {
-    width: 96%;
-}
-.en_link_shouce{
-    position: absolute;
-    height: 30%;
-    left: 48%;
-    top: 62%;
-    width: 51%;
-}
-.link_zhenliaoshouce {
-    position: absolute;
-    height: 23%;
-    left: 11.2%;
-    top: 51%;
-    width: 33%;
-
-}
-
-.link_zhenliaoshouce img {
-    width: 100%;
-}
-.en_link_zhenliaoshouce{
-    position: absolute;
-    height: 23%;
-    left: 16.2%;
-    top: 51%;
-    width: 22%;
-}
-.tushuguan_book {
-
-    position: absolute;
-    left: 68.7%;
-    top: 67.4%;
-    width: 26%;
-}
-
-/*chanpin*/
-.balloon {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 34%;
-    animation: updown 1.5s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 1.5s ease-in-out 0s infinite alternate;
-
-}
-
-.chanpinwaterRight {
-    position: absolute;
-    left: 31%;
-    top: 37%;
-    width: 13%;
-    height: 12%;
-}
-
-.chanpinwater {
-    position: absolute;
-    left: 18%;
-    top: 22%;
-    width: 13%;
-    height: 27%;
-
-}
-
-.e {
-    position: absolute;
-    left: 75%;
-    top: 67%;
-    width: 7%;
-    animation: e 5s linear 0s infinite alternate;
-    -webkit-animation: e 5s linear 0s infinite alternate;
-}
-
-@keyframes e {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-10px);
-    }
-}
-
-@-webkit-keyframes e {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-10px);
-    }
-}
-
-.people {
-    position: absolute;
-    left: 64%;
-    top: 42%;
-    width: 14%;
-    height: 14%;
-
-}
-
-.peopletop {
-    position: absolute;
-    left: 25%;
-    top: 9%;
-    width: 51%;
-    animation: shake 16s infinite;
-    -webkit-animation: shake 16s infinite;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom
-}
-
-.peoplebottom {
-    position: absolute;
-    left: 7%;
-    top: 58%;
-    width: 71%;
-
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(10deg);
-    }
-    10% {
-        transform: rotate(-8deg);
-    }
-    20% {
-        transform: rotate(10deg);
-    }
-    30% {
-        transform: rotate(-6deg);
-    }
-    40% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(-4deg);
-    }
-    60% {
-        transform: rotate(10deg);
-    }
-    70% {
-        transform: rotate(-2deg);
-    }
-    80% {
-        transform: rotate(10deg);
-    }
-    90% {
-        transform: rotate(-0deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(10deg);
-    }
-    10% {
-        transform: rotate(-8deg);
-    }
-    20% {
-        transform: rotate(10deg);
-    }
-    30% {
-        transform: rotate(-6deg);
-    }
-    40% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(-4deg);
-    }
-    60% {
-        transform: rotate(10deg);
-    }
-    70% {
-        transform: rotate(-2deg);
-    }
-    80% {
-        transform: rotate(10deg);
-    }
-    90% {
-        transform: rotate(-0deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
-
-.chanpin_cloud {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 30%;
-    overflow: hidden;
-
-}
-
-.chanpin_cloud1 {
-    position: absolute;
-    left: 4%;
-    top: 19%;
-    width: 36%;
-    animation: cloud 12s linear 2s infinite alternate;
-    -webkit-animation: cloud 12s linear 2s infinite alternate;
-}
-
-.chanpin_cloud2 {
-    position: absolute;
-    left: 52%;
-    top: 9%;
-    width: 22%;
-    animation: cloud 7s linear 0s infinite alternate;
-    -webkit-animation: cloud 7s linear 0s infinite alternate;
-}
-
-.chanpin_cloud3 {
-    position: absolute;
-    left: 60%;
-    top: 11%;
-    width: 22%;
-    animation: cloud 7s linear 0s infinite alternate;
-    -webkit-animation: cloud 7s linear 0s infinite alternate;
-}
-
-.chanpin_cloud4 {
-    position: absolute;
-    left: 78%;
-    top: 63%;
-    width: 22%;
-    animation: cloud 15s linear 0.1s infinite alternate;
-    -webkit-animation: cloud 15s linear 0.1s infinite alternate;
-}
-
-.chanpin_box {
-    position: absolute;
-    left: 40%;
-    top: 64%;
-    width: 23%;
-    height: 15%;
-
-}
-
-.box {
-    position: absolute;
-    left: 15%;
-    top: 42%;
-    width: 70%;
-    animation: updown 3s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0s infinite alternate;
-
-}
-
-.box1 {
-    position: absolute;
-    left: 11%;
-    top: 21%;
-    width: 37%;
-    animation: updown 4s ease-in-out 0.5s infinite alternate;
-    -webkit-animation: updown 4s ease-in-out 0.5s infinite alternate;
-
-}
-
-.box2 {
-    position: absolute;
-    left: 43%;
-    top: 13%;
-    width: 15%;
-    animation: updown 2s ease-in-out 1s infinite alternate;
-    -webkit-animation: updown 2s ease-in-out 1s infinite alternate;
-
-}
-
-.box3 {
-    position: absolute;
-    left: 63%;
-    top: 32%;
-    width: 23%;
-    animation: updown 5s ease-in-out 0.2s infinite alternate;
-    -webkit-animation: updown 5s ease-in-out 0.2s infinite alternate;
-
-}
-
-.shadow {
-    position: absolute;
-    left: 35%;
-    top: 96%;
-    width: 30%;
-    animation: updown 3s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0s infinite alternate;
-}
-
-.link_baojian {
-    position: absolute;
-    height: 21%;
-    left: 2%;
-    top: 68%;
-    width: 45%;
-
-}
-
-.link_baojian img {
-    width: 56%;
-    position: absolute;
-    right: 0;
-}
-.en_link_baojian{
-    left: -6%;
-    top: 68%;
-    width: 43%;
-}
-.link_jiankang {
-    position: absolute;
-    height: 26%;
-
-    left: 37%;
-    top: 22%;
-    width: 54%;
-
-}
-
-.link_jiankang img {
-    width: 49%;
-}
-.en_link_jiankang{
-    left: 31%;
-    top: 22%;
-    width: 48%;
-
-}
-/*shehuizeren*/
-.tree {
-    position: absolute;
-    top: 9.3%;
-    left: 13%;
-    width: 73%;
-}
-
-.link_yigan {
-    position: absolute;
-    top: 15.8%;
-    left: 12%;
-    width: 30.6%;
-    z-index: 999;
-
-}
-
-.link_yigan img {
-    width: 110%;
-}
-.en_link_yigan{
-    top: 13.2%;
-    left: 13%;
-    width: 28.6%;
-}
-.leaf1 {
-    position: absolute;
-    top: 18.8%;
-    left: 15%;
-    width: 26.6%;
-    z-index: 999;
-    animation: scale2 4s linear 1s infinite alternate;
-    -webkit-animation: scale2 4s linear 1s infinite alternate;
-}
-
-.link_beike {
-    position: absolute;
-    top: 8.4%;
-    left: 67%;
-    width: 17%;
-    z-index: 999;
-
-}
-
-.link_beike img {
-    width: 110%;
-}
-.en_link_beike{
-    top: 8.4%;
-    left: 66%;
-    width: 18%;
-}
-.leaf2 {
-    position: absolute;
-    top: 12%;
-    left: 63%;
-    width: 25%;
-    z-index: 999;
-    animation: scale2 5s linear .2s infinite alternate;
-    -webkit-animation: scale2 5s linear .2s infinite alternate;
-}
-
-.link_zhiyuanzhe {
-    position: absolute;
-    top: 33%;
-    left: 3.4%;
-    width: 29%;
-    z-index: 999;
-}
-
-.link_zhiyuanzhe img {
-    width: 110%;
-}
-.en_link_zhiyuanzhe{
-    top: 33%;
-    left: 2.7%;
-    width: 28%;
-}
-.leaf3 {
-    position: absolute;
-    top: 39%;
-    left: 7%;
-    width: 23%;
-    z-index: 999;
-    animation: scale2 2s linear 2.4s infinite alternate;
-    -webkit-animation: scale2 2s linear 2.4s infinite alternate;
-}
-
-.link_xiangmu {
-    position: absolute;
-    top: 38.1%;
-    left: 40.2%;
-    width: 18%;
-    z-index: 999;
-}
-
-.link_xiangmu img {
-    width: 110%;
-}
-.en_link_xiangmu{
-    top: 38.5%;
-    left: 36.9%;
-    width: 23%;
-
-}
-.leaf4 {
-    position: absolute;
-    top: 42%;
-    left: 34%;
-    width: 32%;
-    z-index: 999;
-    animation: scale2 4s linear .6s infinite alternate;
-    -webkit-animation: scale2 4s linear .6s infinite alternate;
-}
-
-.link_aizibing {
-    position: absolute;
-    top: 29.2%;
-    left: 63.5%;
-    width: 27%;
-    z-index: 999;
-
-}
-
-.link_aizibing img {
-    width: 110%;
-}
-.en_link_aizibing{
-    top: 27.2%;
-    left: 62.4%;
-    width: 31%;
-}
-.leaf5 {
-    position: absolute;
-    top: 33.1%;
-    left: 67%;
-    width: 23%;
-    z-index: 999;
-    animation: scale2 7s linear .2s infinite alternate;
-    -webkit-animation: scale2 7s linear .2s infinite alternate;
-}
-
-.link_kangzhen {
-    position: absolute;
-    top: 54.5%;
-    left: 15.5%;
-    width: 20%;
-    z-index: 999;
-
-}
-
-.link_kangzhen img {
-    width: 100%;
-}
-.en_link_kangzhen{
-    top: 54.5%;
-    left: 10.3%;
-    width: 30%;
-}
-.leaf6 {
-    position: absolute;
-    top: 58%;
-    left: 12%;
-    width: 26%;
-    z-index: 999;
-    animation: scale2 6s linear .1s infinite alternate;
-    -webkit-animation: scale2 6s linear .1s infinite alternate;
-}
-
-.link_qiyezeren {
-    position: absolute;
-    top: 56.8%;
-    left: 61.7%;
-    width: 28%;
-    z-index: 999;
-
-}
-
-.link_qiyezeren img {
-    width: 100%;
-}
-.en_link_qiyezeren{
-    top: 56.8%;
-    left: 57.7%;
-    width: 35%;
-}
-.leaf7 {
-    position: absolute;
-    top: 61%;
-    left: 61%;
-    width: 28%;
-    z-index: 999;
-    animation: scale2 4s linear .5s infinite alternate;
-    -webkit-animation: scale2 4s linear .5s infinite alternate;
-}
-
-.leaf8 {
-    position: absolute;
-    top: 1%;
-    left: 38%;
-    width: 26%;
-    z-index: 999;
-
-}
-
-@keyframes fadein2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein2 {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.car {
-    position: absolute;
-    left: 0%;
-    top: 75.8%;
-    width: 100%;
-    height: 17%;
-
-    overflow: hidden;
-
-}
-
-.zeren_car1 {
-    position: absolute;
-    left: -18%;
-    top: 41.8%;
-    width: 17%;
-    animation: translateCar1 10s linear 0s infinite;
-    -webkit-animation: translateCar1 10s linear 0s infinite;
-}
-
-.zeren_car2 {
-    position: absolute;
-    right: -18%;
-    top: 4.4%;
-    width: 17%;
-    animation: translateCar2 16s linear 0s infinite;
-    -webkit-animation: translateCar2 16s linear 0s infinite;
-}
-
-/*@keyframes translateXCarLeft {
-    0% {
-        transform: scale(1, 1)
-    }
-    100% {
-        transform: scale(-1, 1)
-    }
-}
-
-@-webkit-keyframes translateXCarLeft {
-    0% {
-        transform: scale(0, 0)
-    }
-
-}
-
-@keyframes translateXRight {
-    0% {
-        transform: scale(0, 0)
-    }
-    100% {
-        transform: scale(-1, 1)
-    }
-}
-
-@-webkit-keyframes translateXRight {
-    0% {
-        transform: scale(0, 0)
-    }
-    100% {
-        transform:  scale(-1, 1)
-    }
-}*/
-@keyframes translateCar1 {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(700px);
-    }
-}
-
-@-webkit-keyframes translateCar1 {
-    0% {
-        transform: translateX(0px);
-    }
-
-    100% {
-        transform: translateX(700px);
-    }
-}
-
-@keyframes translateCar2 {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-700px);
-    }
-}
-
-@-webkit-keyframes translateCar2 {
-    0% {
-        transform: translateX(0px);
-    }
-
-    100% {
-        transform: translateX(-700px);
-    }
-}
-
-@keyframes translateXLeft {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-150px);
-    }
-}
-
-@-webkit-keyframes translateXLeft {
-    0% {
-        transform: translateX(0px);
-    }
-
-    100% {
-        transform: translateX(-150px);
-    }
-}
-
-@keyframes translateXRight {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(50px);
-    }
-}
-
-@-webkit-keyframes translateXRight {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(50px);
-    }
-}
-
-.zeren_cloud1 {
-    position: absolute;
-    left: 64%;
-    top: 28.4%;
-    width: 35%;
-    z-index: 1;
-    animation: cloud 10s linear 0s infinite alternate;
-    -webkit-animation: cloud 10s linear 0s infinite alternate;
-}
-
-.zeren_cloud2 {
-    position: absolute;
-    left: 76%;
-    top: 9.4%;
-    width: 23%;
-    animation: translateXLeft 14s linear 2s infinite alternate;
-    -webkit-animation: translateXLeft 14s linear 2s infinite alternate;
-}
-
-.zeren_cloud3 {
-    position: absolute;
-    left: -15%;
-    top: 12.4%;
-    width: 37%;
-    animation: translateXRight 18s linear 3s infinite alternate;
-    -webkit-animation: translateXRight 18s linear 3s infinite alternate;
-}
-
-/*rencaifazhan*/
-.link_guzhu {
-    position: absolute;
-    height: 24%;
-    left: 33.9%;
-    top: 5.1%;
-    width: 23.2%;
-
-}
-
-.link_guzhu img {
-    width: 97%;
-    position: absolute;
-    left: 0%;
-}
-.en_link_guzhu{
-    left: 39%;
-    top: 5.1%;
-    width: 24.2%;
-}
-.rencai_cloud1 {
-    position: absolute;
-    left: 19%;
-    top: 27.4%;
-    width: 13%;
-    z-index: 1;
-    animation: cloud 10s linear 0s infinite alternate;
-    -webkit-animation: cloud 10s linear 0s infinite alternate;
-}
-
-.rencai_cloud2 {
-    position: absolute;
-    left: 38%;
-    top: 49.4%;
-    width: 19%;
-    animation: translateXLeft 14s linear 2s infinite alternate;
-    -webkit-animation: translateXLeft 14s linear 2s infinite alternate;
-}
-
-.rencai_cloud3 {
-    position: absolute;
-    left: 0%;
-    top: 18.4%;
-    width: 16%;
-    animation: translateXLeft 18s linear 3s infinite alternate;
-    -webkit-animation: translateXLeft 18s linear 3s infinite alternate;
-}
-
-.rencai_cloud4 {
-    position: absolute;
-    left: 64%;
-    top: 1.4%;
-    width: 29%;
-    animation: cloud 10s linear 0s infinite alternate;
-    -webkit-animation: cloud 10s linear 0s infinite alternate;
-}
-
-.rencai_cloud5 {
-    position: absolute;
-    left: 5%;
-    top: 71.1%;
-    width: 47%;
-    z-index: 5;
-    animation: cloud 18s linear 3s infinite alternate;
-    -webkit-animation: cloud 18s linear 3s infinite alternate;
-}
-
-.rencai_cloud6 {
-    position: absolute;
-    left: -15%;
-    top: 71.8%;
-    width: 37%;
-    z-index: 4;
-
-    animation: cloud 18s linear 3s infinite alternate;
-    -webkit-animation: cloud 18s linear 3s infinite alternate;
-}
-
-.rencai_email {
-    position: absolute;
-    left: 36%;
-    top: 55.8%;
-    width: 11%;
-    animation: updown 5s linear 2s infinite alternate;
-    -webkit-animation: updown 5s linear 2s infinite alternate;
-}
-
-.rencai_huojian2 {
-    position: absolute;
-    left: 52%;
-    top: 51.7%;
-    width: 31.7%;
-    z-index: 8;
-
-}
-
-.rencai_huojian {
-    position: absolute;
-    left: 78%;
-    top: 46.4%;
-    width: 16%;
-    z-index: 9;
-    animation: updown2 1s linear 0s infinite alternate;
-    -webkit-animation: updown2 1s linear 0s infinite alternate;
-}
-
-@keyframes updown2 {
-    from {
-        transform: translate3d(5px, -5px, 0);
-    }
-    to {
-        transform: translate3d(-5px, 5px, 0);
-    }
-}
-
-@-webkit-keyframes updown2 {
-    from {
-        -webkit-transform: translate3d(5px, -5px, 0);
-    }
-    to {
-        -webkit-transform: translate3d(-5px, 5px, 0);
-    }
-}
-
-.star {
-    position: absolute;
-    width: 10%;
-    left: 35%;
-    top: 10%;
-    animation: scale 1s linear 0s infinite alternate;
-    -webkit-animation: scale 1s linear 0s infinite alternate;
-}
-
-.star img {
-    width: 100%;
-}
-
-.rencai_tanhao1 {
-    position: absolute;
-    left: 0%;
-    top: 20.4%;
-    width: 4%;
-    transform: rotate(-27deg);
-}
-
-.rencai_tanhao2 {
-    position: absolute;
-    left: 2.8%;
-    top: 15.2%;
-    width: 4%;
-    transform: rotate(4deg);
-    animation: fadein 2s linear .7s both;
-    -webkit-animation: fadein 2s linear .7s both;
-}
-
-.rencai_tanhao3 {
-    position: absolute;
-    left: 9.7%;
-    top: 12.5%;
-    width: 4%;
-    transform: rotate(28deg);
-    animation: fadein 2s linear 1.4s both;
-    -webkit-animation: fadein 2s linear 1.4s both;
-}
-
-.rencai_tanhao4 {
-    position: absolute;
-    left: 19%;
-    top: 12.2%;
-    width: 4%;
-    transform: rotate(69deg);
-    animation: fadein 2s linear 2.1s both;
-    -webkit-animation: fadein 2s linear 2.1s both;
-}
-
-.rencai_tanhao5 {
-    position: absolute;
-    left: 27%;
-    top: 15.4%;
-    width: 4%;
-    transform: rotate(106deg);
-    animation: fadein 2s linear 2.8s both;
-    -webkit-animation: fadein 2s linear 2.8s both;
-}
-
-.rencai_tanhao6 {
-    position: absolute;
-    left: 29.5%;
-    top: 21%;
-    width: 4%;
-    transform: rotate(146deg);
-    animation: fadein 2s linear 3.5s both;
-    -webkit-animation: fadein 2s linear 3.5s both;
-}
-
-.rencai_setting {
-    position: absolute;
-    left: 11%;
-    top: 54.4%;
-    width: 7%;
-    animation: updown 3s linear 0s infinite alternate;
-    -webkit-animation: updown 3s linear 0s infinite alternate;
-}
-
-.rencai_paper {
-    position: absolute;
-    left: 0;
-    top: 61.4%;
-    width: 14%;
-    animation: updown 1.5s linear 1s infinite alternate;
-    -webkit-animation: updown 1.5s linear 1s infinite alternate;
-}
-
-.rencai_tizi {
-    position: absolute;
-    left: 31%;
-    top: 77.4%;
-    width: 7%;
-    z-index: 8;
-}
-
-.rencai_fangdajing {
-    position: absolute;
-    left: 11%;
-    top: 58.4%;
-    width: 31%;
-    z-index: 4;
-}
-
-.rencai_cloth {
-    position: absolute;
-    left: 12.4%;
-    top: 44.2%;
-    width: 20%;
-}
-
-.link_rencaijiazhi {
-    position: absolute;
-    height: 27%;
-    left: 0.4%;
-    top: 5.2%;
-    width: 29%;
-}
-
-.link_rencaijiazhi img {
-    width: 92%;
-    position: absolute;
-    left: 9%;
-}
-.en_link_rencaijiazhi{
-    left: 4%;
-    top: 5.2%;
-    width: 32%;
-}
-.link_yumojujin {
-    position: absolute;
-    height: 40%;
-    left: 68.8%;
-    top: 29.3%;
-    width: 29%;
-}
-
-.link_yumojujin img {
-    width: 80%;
-}
-.en_link_yumojujin{
-    left: 67.8%;
-    top: 29.3%;
-    width: 32%;
-}
-.en_link_yumojujin img{
-    width: 89%;
-}
-.link_zhaopin {
-    position: absolute;
-    z-index: 99;
-    height: 35%;
-    left: 2.4%;
-    top: 43.5%;
-    width: 55%;
-}
-
-.link_zhaopin img {
-    position: absolute;
-    width: 50%;
-    right: -9%;
-    bottom: 30%;
-
-}
-.en_link_zhaopin{
-    left: 1%;
-    top: 43.5%;
-    width: 57%;
-}
-.en_link_zhaopin img{
-    position: absolute;
-    width: 50%;
-    right: 27%;
-    bottom: -10%;
-}
-/*yixueshouce*/
-.shouce_cloud1 {
-    position: absolute;
-    left: -3.6%;
-    top: 30.6%;
-    width: 25%;
-    animation: translateXLeft 18s linear 0s infinite alternate;
-    -webkit-animation: translateXLeft 18s linear 0s infinite alternate;
-}
-
-.shouce_cloud2 {
-    position: absolute;
-    left: 42%;
-    top: 55.4%;
-    width: 19%;
-    animation: translateXRight 10s linear 3s infinite alternate;
-    -webkit-animation: translateXRight 10s linear 3s infinite alternate;
-}
-
-.shouce_cloud3 {
-    position: absolute;
-    left: 63.4%;
-    top: 2.5%;
-    width: 30%;
-    animation: cloud 18s linear 1.3s infinite alternate;
-    -webkit-animation: cloud 13s linear 1.3s infinite alternate;
-}
-
-.shouce_cloud4 {
-    position: absolute;
-    left: 1.4%;
-    top: 52.5%;
-    width: 13%;
-    animation: cloud 8s linear 1s infinite alternate;
-    -webkit-animation: cloud 8s linear 1s infinite alternate;
-}
-
-.shouce_cloud5 {
-    position: absolute;
-    left: 40%;
-    top: 83.5%;
-    width: 16%;
-    animation: translateXRight 10s linear 0.5s infinite alternate;
-    -webkit-animation: translateXRight 10s linear 0.5s infinite alternate;
-}
-
-.shouce_fangdajing {
-    position: absolute;
-    left: 31.4%;
-    top: 60.5%;
-    width: 17%;
-    transform-origin: 50px 50px;
-    animation: animX 5s cubic-bezier(0.36, 0, 0.64, 1) -2s infinite alternate, animY 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
-    -webkit-animation: animX 5s cubic-bezier(0.36, 0, 0.64, 1) -2s infinite alternate, animY 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
-}
-
-.shouce_thing1 {
-    position: absolute;
-    left: 11.4%;
-    top: 58.5%;
-    width: 14%;
-    animation: shake 4s infinite;
-    -webkit-animation: shake 4s infinite;
-}
-
-.shouce_thing2 {
-    position: absolute;
-    left: 30.4%;
-    top: 70.5%;
-    width: 5%;
-    animation: updown 3s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0s infinite alternate;
-}
-
-.yixueshouce {
-    position: absolute;
-    left: 27.4%;
-    top: 26.9%;
-    width: 17%;
-    animation: updown 3s ease-in-out 1s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 1s infinite alternate;
-}
-
-.link_yiliaoshouce {
-    height: 28%;
-
-    position: absolute;
-    left: 37.4%;
-    top: 13.4%;
-    width: 49%;
-
-}
-
-.link_yiliaoshouce img {
-    width: 43%;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.en_link_yiliaoshouce img{
-    width: 26%;
-    position: absolute;
-    right: 18%;
-    top: 0;
-}
-.link_yiweida {
-    position: absolute;
-    height: 25%;
-    left: 32.4%;
-    top: 53.5%;
-    width: 55%;
-
-}
-
-.link_yiweida img {
-    width: 33%;
-    position: absolute;
-    right: 0;
-}
-.en_link_yiweida img{
-    width: 29.7%;
-    position: absolute;
-    right: 42%;
-}
-@keyframes shake {
-    0% {
-        transform: rotate(10deg);
-    }
-    10% {
-        transform: rotate(-8deg);
-    }
-    20% {
-        transform: rotate(10deg);
-    }
-    30% {
-        transform: rotate(-6deg);
-    }
-    40% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(-4deg);
-    }
-    60% {
-        transform: rotate(10deg);
-    }
-    70% {
-        transform: rotate(-2deg);
-    }
-    80% {
-        transform: rotate(10deg);
-    }
-    90% {
-        transform: rotate(-0deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(10deg);
-    }
-    10% {
-        transform: rotate(-8deg);
-    }
-    20% {
-        transform: rotate(10deg);
-    }
-    30% {
-        transform: rotate(-6deg);
-    }
-    40% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(-4deg);
-    }
-    60% {
-        transform: rotate(10deg);
-    }
-    70% {
-        transform: rotate(-2deg);
-    }
-    80% {
-        transform: rotate(10deg);
-    }
-    90% {
-        transform: rotate(-0deg);
-    }
-    100% {
-        transform: rotate(10deg);
-    }
-}
-
-@keyframes animX {
-    0% {
-        left: 32%;
-    }
-    100% {
-        left: 37%;
-    }
-}
-
-@keyframes animY {
-    0% {
-        top: 61%;
-    }
-    100% {
-        top: 64%;
-    }
-}
-
-.white1 {
-    position: absolute;
-    left: 23.4%;
-    top: 69.5%;
-    width: 1.4%;
-    animation: updown 2.3s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 2.3s ease-in-out 0.2s infinite alternate;
-}
-
-.white2 {
-    osition: absolute;
-    left: 27.4%;
-    top: 72.5%;
-    width: 1.4%;
-    animation: updown 5s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 5s ease-in-out 0s infinite alternate;
-}
-
-.white3 {
-    position: absolute;
-    left: 25.4%;
-    top: 73.5%;
-    width: 1.5%;
-    animation: updown 6s ease-in-out 0.5s infinite alternate;
-    -webkit-animation: updown 6s ease-in-out 0.5s infinite alternate;
-}
-
-.white4 {
-    position: absolute;
-    left: 22.4%;
-    top: 71.5%;
-    width: 1.2%;
-    animation: updown 4s ease-in-out 0.2s infinite alternate;
-    -webkit-animation: updown 4s ease-in-out 0.2s infinite alternate;
-}
-
-.white5 {
-    position: absolute;
-    left: 25.4%;
-    top: 71.5%;
-    width: 1.2%;
-    animation: updown 3s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0s infinite alternate;
-}
-
-/*shimingyuyuanjing*/
-.touxiang {
-    position: absolute;
-    left: 5%;
-    top: 3.7%;
-    width: 39.9%;
-}
-
-.shiming_cloud {
-    position: absolute;
-    left: 53%;
-    top: 17.7%;
-    width: 38.9%;
-    height: 43.1%;
-    overflow: hidden;
-}
-
-.shiming_cloud1 {
-    position: absolute;
-    left: -5.6%;
-    top: 5.5%;
-    width: 56%;
-    animation: translateXRight 18s linear 1.3s infinite alternate;
-    -webkit-animation: translateXRight 18s linear 1.3s infinite alternate;
-}
-
-.shiming_cloud2 {
-    position: absolute;
-    left: 42.4%;
-    top: 34.9%;
-    width: 44%;
-
-    animation: cloud 13s linear .3s infinite alternate;
-    -webkit-animation: cloud 13s linear .3s infinite alternate;
-}
-
-.shiming_cloud3 {
-    position: absolute;
-    left: 51.4%;
-    top: 15.5%;
-    width: 26%;
-    animation: translateXRight 10s linear 1s infinite alternate;
-    -webkit-animation: translateXRight 10s linear 1s infinite alternate;
-}
-
-.shiming_cloud4 {
-    position: absolute;
-    left: 9.4%;
-    top: 37.2%;
-    width: 45%;
-    animation: cloud 12s linear 0.5s infinite alternate;
-    -webkit-animation: cloud 12s linear 0.5s infinite alternate;
-}
-
-.shiming_cloud5 {
-    position: absolute;
-    left: 32.4%;
-    top: 58.5%;
-    width: 41%;
-    animation: translateXRight 13s linear 1.3s infinite alternate;
-    -webkit-animation: translateXRight 13s linear 1.3s infinite alternate;
-}
-
-.shiming_pc {
-    position: absolute;
-    left: 32.4%;
-    top: 58%;
-    width: 42%;
-}
-
-.shiming_light {
-    position: absolute;
-    left: 5.4%;
-    top: 62.5%;
-    width: 31%;
-}
-
-.shiming_clock {
-    position: absolute;
-    left: 76.4%;
-    top: 62.5%;
-    width: 22%;
-}
-
-.link_shangyedaode {
-    position: absolute;
-    height: 24%;
-    left: 32.4%;
-    top: 57.5%;
-    width: 53%;
-}
-
-.link_shangyedaode img {
-    position: absolute;
-    width: 60%;
-    bottom: 0;
-    right: 0;
-}
-.en_link_shangyedaode img{
-    width: 48%;
-    right: 10%;
-}
-.link_shiming2 {
-    height: 54%;
-    position: absolute;
-    left: 50.4%;
-    top: 2.5%;
-    width: 43%;
-
-}
-
-.link_shiming2 img {
-    width: 62%;
-    position: absolute;
-    left: 21%;
-}
-.en_link_shiming2{
-    left: 48.4%;
-    top: 2.5%;
-    width: 48%;
-}
-/*gongsigaikuang*/
-.earthMap{
-    width: 45%;
-    position: absolute;
-    top: 47.5%;
-    left: 10%;
-
-}
-@keyframes transmap {
-    from {
-        transform:translate(100px,0px) rotate(-30deg);
-
-    }
-    to {
-        transform:translate(-193px,169px) rotate(-30deg);
-    }
-}
-
-/*@-webkit-keyframes transmap {
-    from {
-
-        -webkit-transform:translate(100px);
-    }
-    to {
-
-        -webkit-transform:translate(0px);
-    }
-}*/
-.earthMap img{
-    width: 100%;
-}
-.gaikuang_map {
-    display: block;
-    position: absolute;
-    left: 13%;
-    top: 4.4%;
-    width: 74%;
-    height: 37.7%;
-    z-index: 99;
-    overflow: hidden;
-}
-
-.map {
-    position: absolute;
-    left: 1%;
-    top: 21%;
-    width: 99%;
-}
-
-.gaikuang_cloud1 {
-    position: absolute;
-    left: 25.4%;
-    top: 15.9%;
-    width: 11%;
-    animation: cloud 8s linear .3s infinite alternate;
-    -webkit-animation: cloud 8s linear .3s infinite alternate;
-}
-
-.gaikuang_cloud2 {
-    position: absolute;
-    left: 45.4%;
-    top: 17.9%;
-    width: 15%;
-    animation: translateXRight 13s linear .3s infinite alternate;
-    -webkit-animation: translateXRight 13s linear .3s infinite alternate;
-}
-
-.gaikuang_cloud3 {
-    position: absolute;
-    left: 55.4%;
-    top: 23.9%;
-    width: 13%;
-    animation: cloud 8s linear 0.5s infinite alternate;
-    -webkit-animation: cloud 8s linear 0.5s infinite alternate;
-}
-
-.gaikuang_cloud4 {
-    position: absolute;
-    left: 7.4%;
-    top: 28.9%;
-    width: 17%;
-    z-index: 99;
-    animation: translateXRight 10s linear 1.3s infinite alternate;
-    -webkit-animation: translateXRight 10s linear 1.3s infinite alternate;
-}
-
-.gaikuang_thing1 {
-    position: absolute;
-    left: 41.4%;
-    top: 43.6%;
-    width: 7%;
-    animation: updown 4s ease-in-out 0.2s infinite alternate;
-    -webkit-animation: updown 4s ease-in-out 0.2s infinite alternate;
-}
-
-.gaikuang_thing2 {
-    position: absolute;
-    left: 40.4%;
-    top: 49.9%;
-    width: 3%;
-    animation: updown 2s ease-in-out 0.3s infinite alternate;
-    -webkit-animation: updown 2s ease-in-out 0.3s infinite alternate;
-}
-
-.gaikuang_thing3 {
-    position: absolute;
-    left: 46.6%;
-    top: 49.9%;
-    width: 2.4%;
-
-    animation: updown 5s ease-in-out 0.2s infinite alternate;
-    -webkit-animation: updown 5s ease-in-out 0.2s infinite alternate;
-}
-
-.gaikuang_thing4 {
-    position: absolute;
-    left: 43.4%;
-    top: 52.9%;
-    width: 2.1%;
-    animation: updown 3s ease-in-out 0.5s infinite alternate;
-    -webkit-animation: updown 3s ease-in-out 0.5s infinite alternate;
-}
-
-.gaikuang_thing5 {
-    position: absolute;
-    left: 48.4%;
-    top: 53.9%;
-    width: 1.8%;
-    animation: updown 4s ease-in-out 0s infinite alternate;
-    -webkit-animation: updown 4s ease-in-out 0s infinite alternate;
-}
-
-.gaikuang_light {
-    position: absolute;
-    left: 35%;
-    top: -3%;
-    width: 30%;
-    z-index: 9;
-}
-
-@keyframes rotate {
-    from {
-        transform-origin: center;
-        transform: rotate(0deg);
-    }
-    to {
-        transform-origin: center;
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes rotate {
-    from {
-        -webkit-transform-origin: center;
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform-origin: center;
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-.gaikuang_earth {
-    position: absolute;
-    left: 17.4%;
-    top: 53.1%;
-    width: 34%;
-    z-index: 99;
-    animation: rotate 20s 0s infinite linear;
-    -webkit-animation: rotate 20s 0s infinite linear;
-}
-
-.map_turn {
-
-    position: absolute;
-    left: 15.4%;
-    top: 11%;
-    width: 74%;
-    height: 33%;
-    z-index: 88;
-}
-
-.map_turn1 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.link_inEarth {
-    position: absolute;
-    left: 12.4%;
-    top: 45%;
-    width: 26%;
-}
-
-.link_inEarth img {
-    width: 110%;
-}
-.en_link_inEarth{
-    left: 16.4%;
-    top: 46%;
-    width: 23%;
-}
-.link_qiyerongyu {
-
-    z-index: 200;
-    position: absolute;
-    height: 22%;
-    left: 72.2%;
-    top: 15.4%;
-    width: 20%;
-}
-.en_link_qiyerongyu{
-    left: 72.9%;
-    top: 18%;
-    width: 19.7%;
-}
-
-.link_qiyerongyu img {
-    width: 100%;
-}
-
-.link_shipin {
-
-    position: absolute;
-    height: 20%;
-    left: 72.4%;
-    top: 41%;
-    width: 20%;
-}
-
-
-.link_shipin img {
-    width: 100%;
-}
-
-.en_link_shipin{
-    left: 72.4%;
-    top: 43%;
-    width: 20%;
-}
-.link_inChina {
-
-    height: 55%;
-    position: absolute;
-    left: 0.4%;
-    top: 20%;
-    width: 28.5%;
-}
-
-.link_inChina img {
-    width: 120%;
-}
-.en_link_inChina{
-    left: 4.4%;
-    top: 20%;
-    width: 23.5%;
-}
-.link_inChina2 {
-
-    position: absolute;
-    left: 13.3%;
-    top: 6%;
-    height: 30%;
-    width: 51.5%;
-}
-
-.link_inChina2 img {
-    position: absolute;
-    left: 27%;
-    width: 53%;
-}
-
-.en_link_inChina2{
-    left: 20.3%;
-    top: 6%;
-    width: 39.5%;
-}
-
-.mod-orient-layer {
-    display: none;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 9999;
-}
-
-.mod-orient-layer_content {
-    position: absolute;
-    width: 100%;
-    top: 25%;
-    text-align: center
-}
-
-.mod-orient-layer_icon-orient {
-    margin-bottom: 40px;
-    background: url('../img/tip.png') no-repeat;
-    background-size: 100% 100%;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -webkit-animation: rotation infinite 1.5s ease-in-out;
-    animation: rotation infinite 1.5s ease-in-out;
-}
-
-.mod-orient-layer_desc {
-    margin-top: 5px;
-    color: rgb(71, 192, 186);
-    font-size: 14px;
-}
-
-.text {
-    margin: 0 auto;
-    color: rgb(71, 192, 186);
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
-}
-
-.text1 {
-    padding-bottom: 40px;
-}
-
-@-webkit-keyframes rotation {
-    10% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg)
-    }
-    50%, 60% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg)
-    }
-    90% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg)
-    }
-    100% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg)
-    }
-}
-
-@keyframes rotation {
-    10% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg)
-    }
-    50%, 60% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg)
-    }
-    90% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg)
-    }
-    100% {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg)
-    }
-}
-
-
-/*gallery*/
-
-#container {
-
-    z-index: 5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0% auto;
-
-    left: 0;
-    top: 0;
-    overflow: hidden;
-
-}
-
-#list {
-    position: absolute;
-    border: 1px solid red;
-}
-
-#list li {
-    transition: all 2s;
-    -moz-transition: all 2s;
-    -webkit-transition: all 2s;
-    -o-transition: all 2s;
-    background: #fff;
-    float: left;
-}
-
-#list li img {
-    width: 200px;
-
-}
-
-
-

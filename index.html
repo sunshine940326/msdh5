@@ -5,27 +5,26 @@
     <meta name="x5-orientation" content="portrait">
     <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1, maximum-scale=1">
     <title>默沙东官网</title>
-
     <link rel="stylesheet" href="css/index.css">
-
-
 </head>
 
 <body>
-
 <div class="container" id="container">
     <img src="img/bgd.png" class="bgd">
-    <p class="translate">
+    <div class="translate">
         <img src="img/en.png" id="cn">
-    </p>
+    </div>
+
     <a href="shehuizeren.html">
-        <p class="earth">
+        <div class="earth">
             <img src="img/earth.png" class="earthimg">
             <img src="img/leaf.png" class="leaf">
-        </p>
+        </div>
     </a>
+
     <img src="img/earth_bottom.png" class="earth_bottom">
-    <p class="heart">
+
+    <div class="heart">
         <a href="shimingyuyuanjing.html">
             <img src="img/heartbig.png" class="heartbig">
         </a>
@@ -33,26 +32,29 @@
         <img src="img/heart.png" class="heart2">
         <img src="img/heart.png" class="heart3">
         <img src="img/heart.png" class="heart4">
-    </p>
-    <p class="ball">
+    </div>
+
+    <div class="ball">
         <img src="img/ball.png" class="ball1">
         <img src="img/ball.png" class="ball2">
-    </p>
+    </div>
 
-    <p class="talkleft" id="talkleft">
+    <div class="talkleft" id="talkleft">
         <img src="img/talkleft.png"/>
         <i class="dot dot1"></i>
         <i class="dot dot2"></i>
         <i class="dot dot3"></i>
-    </p>
-    <p class="talkright" id="talkright">
+    </div>
+
+    <div class="talkright" id="talkright">
         <img src="img/talkright.png"/>
         <i class="dot dot4"></i>
         <i class="dot dot5"></i>
         <i class="dot dot6"></i>
-    </p>
+    </div>
+
     <a href="chanpin.html">
-        <p class="water">
+        <div class="water">
             <img src="img/water.png" class="water1">
             <img src="img/water.png" class="water2">
             <img src="img/water.png" class="water3">
@@ -63,10 +65,11 @@
             <img src="img/water1.png" class="water8">
             <img src="img/water1.png" class="water9">
             <img src="img/water1.png" class="water10">
-        </p>
+        </div>
     </a>
+
     <a href="chanpin.html">
-        <p class="waterRed">
+        <div class="waterRed">
             <img src="img/water.png" class="water1">
             <img src="img/water.png" class="water2">
             <img src="img/water.png" class="water3">
@@ -77,18 +80,18 @@
             <img src="img/water1.png" class="water8">
             <img src="img/water1.png" class="water9">
             <img src="img/water1.png" class="water10">
-        </p>
+        </div>
     </a>
-    <p class="cloud">
+    <div class="cloud">
         <img src="img/cloud.png" class="cloud1">
         <img src="img/cloud2.png" class="cloud2">
         <img src="img/cloud.png" class="cloud3">
         <img src="img/cloud2.png" class="cloud4">
-    </p>
-    <p class="ship">
+    </div>
+    <div class="ship">
         <img src="img/ship.png" class="ship1">
         <img src="img/ship.png" class="ship2">
-    </p>
+    </div>
 
     <a href="chanpin.html">
         <img src="img/chanpin_img.png" class="chanpin_img">
@@ -142,7 +145,6 @@
 <script>
     /*判断横竖屏*/
     document.body.style.height = view().h + 'px';
-
     window.addEventListener("resize", function() {
         if (window.innerWidth<window.innerHeight) {
             $('#orientLayer').hide();
@@ -156,7 +158,6 @@
         document.addEventListener('touchmove', function(event) {
             event.preventDefault();
         }, false);
-
     }
 </script>
 

@@ -5,11 +5,11 @@ function view() {
     };
 }
 
-
 /*获取localStorage的值*/
 var languageSession=localStorage.getItem("language");
 console.log(languageSession)
 
+/*获取当前的路径名称*/
 var pathName =  window.document.location.pathname;
 console.log(pathName)
 
@@ -36,17 +36,19 @@ if(languageSession =="en"){
     if(pathName.indexOf("keyan")!=-1) {
         document.title = 'SCIENTIFIC EXCELLENCE';
     }
-
     if(pathName.indexOf("tushuguan")!=-1) {
         document.title = 'SCIENCE LIBRARY';
     }
     if(pathName.indexOf("yixuezhuanye")!=-1) {
         document.title = 'MEDICAL PROFESSION';
     }
+
     /*判断session的值,如果为en的情况*/
     console.log("当前选择的语言为en");
+
     /*中英文切换按钮图片转换*/
     $("#cn").attr("src", "img/cn.png");
+
     /*首屏返回时图片转换*/
     $("#link_gaikuang").attr("src", "img/en_link_gaikuang.png");
     $(".link_gaikuang").addClass('en_link_gaikuang');
@@ -133,6 +135,8 @@ if(languageSession =="en"){
     console.log("当前选择的语言为cn");
     $("#link_gaikuang").attr("src", "img/link_gaikuang.png");
 }
+
+
 /*禁止触摸下拉*/
 window.onload = function () {
     document.addEventListener('touchmove', function (event) {
@@ -141,9 +145,7 @@ window.onload = function () {
 
 }
 
-
-
-
+/*click trnslate button*/
 $('#cn').on('click', function () {
     if ($("#cn").attr("src") == "img/en.png") {
         localStorage.setItem("language", langBtn);
@@ -197,7 +199,6 @@ $('#cn').on('click', function () {
 })
 
 
-
 /*talk animation*/
 var talkleft = document.getElementById('talkleft');
 var talkright = document.getElementById('talkright');
@@ -213,7 +214,6 @@ setInterval(function () {
 /*tanhao animation*/
 var oTanhao = document.getElementById("tanhao");
 setInterval(function () {
-
     oTanhao.style.display = 'none';
     setTimeout(function () {
         oTanhao.style.display = 'block';
