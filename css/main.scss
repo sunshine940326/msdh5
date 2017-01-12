@@ -1,0 +1,182 @@
+@charset "utf-8"; //必须设置了这个才能编译有中文的注释
+
+@function px2rem($x) {
+  @return $x / 108 * 1rem; //按1080的设计稿，统一宽度10rem;
+}
+
+/*reset*/
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu {
+  margin: 0;
+  padding: 0
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed
+}
+
+ul, ol, menu {
+  list-style: none
+}
+
+fieldset, img {
+  border: none
+}
+
+img, object, select, input, textarea, button {
+  vertical-align: middle
+}
+
+input, textarea, select, address, caption, cite, code, dfn, em, i, b, strong, small, th, var, abbr {
+  font-size: 100%;
+  font-style: normal
+}
+
+caption, th {
+  text-align: left;
+}
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption {
+  display: block;
+}
+
+code, kbd, pre, samp, tt {
+  font-family: Consolas, "Courier New", Courier, monospace;
+}
+
+address, cite, dfn, em, var, i {
+  font-style: normal;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/*base*/
+@mixin base-style($top:0px,$left:0px,$base-width: 100%,$base-position:absolute) {
+  width: $base-width;
+  position: $base-position;
+  top: $top;
+  left: $left;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  @include base-style;
+  background: url("../img/bgd.png") no-repeat;
+  background-size: 100%;
+}
+
+.index_container_bgd {
+  @include base-style;
+}
+
+#translateBtn {
+  @include base-style(px2rem(53), px2rem(919), px2rem(94))
+}
+
+.leaf {
+  @include base-style(px2rem(0), px2rem(192), px2rem(109))
+}
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+@mixin animation($options: ()) {
+
+  $options: map-merge((
+          animationName: animation,
+          duration: 1,
+          waitTime: 0,
+          timingFunction: linear,
+          iterationCount: infinite
+  ), $options);
+
+  $name: map-get($options, animationName);
+  $kf: map-get($options, keyframes);
+  $kfLength: length($kf);
+  $duration: map-get($options, duration);
+  $waitTime: map-get($options, waitTime);
+  $timingFunction: map-get($options, timingFunction);
+  $iterationCount: map-get($options, iterationCount);
+  $counter: 1; // index of 'each'
+
+  @keyframes #{$name} {
+    @each $frame, $prop in $kf {
+      #{$frame * $duration / ($duration + $waitTime)}% {
+        @each $k, $v in $prop {
+          #{$k}: #{$v}
+        }
+      }
+      // if last in loop and waitTime is not 0, add the last frame as 100% (this is what creates the pause)
+      @if $counter == $kfLength and $waitTime > 0 {
+        100% {
+          @each $k, $v in $prop {
+            #{$k}: #{$v}
+          }
+        }
+      }
+      $counter: $counter+1;
+    }
+  }
+
+  animation: #{$name} #{$duration}s #{$timingFunction} #{$iterationCount};
+  -webkit-animation: #{$name} #{$duration}s #{$timingFunction} #{$iterationCount};
+}
+
+.earth_bottom {
+  @include base-style(px2rem(100), px2rem(0), px2rem(490));
+
+}
+
+.earth {
+  @include base-style(px2rem(512), px2rem(647), px2rem(433));
+}
+
+.earthimg {
+  @include base-style(px2rem(70), px2rem(103), px2rem(287));
+
+  @include animation(
+                  (
+                          animationName: zoom,
+                          keyframes: (
+                                  0: (
+                                          transform: scale(1),
+                                          background-color: blue
+                                  ),
+                                  50: (
+                                          transform: scale(2),
+                                          background-color: green
+                                  ),
+                                  100: (
+                                          transform: scale(3),
+                                          background-color: red
+                                  )
+                          ),
+                          duration: 2,
+                          waitTime: 1,
+                          timingFunction: ease,
+                          iterationCount: infinite
+                  )
+  );
+
+}

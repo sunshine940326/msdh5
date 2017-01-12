@@ -1,3 +1,27 @@
+//Use rem
+var documentElement = document.documentElement;
+
+if (documentElement.clientWidth >= 750) {
+    documentElement.style.fontSize = '54px';
+} else {
+    documentElement.style.fontSize = "${documentElement.getBoundingClientRect().width / 10}px";
+}
+
+
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        var deviceWidth = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = deviceWidth / 10 + 'px';
+    }, false);
+    window.onresize = function(){
+        var deviceWidth = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = deviceWidth / 10 + 'px';
+    };
+
+    console.log(document.width)
+})();
+
+
 function view() {
     return {
         w: document.documentElement.clientWidth,

@@ -1,0 +1,106 @@
+/*reset*/
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td, menu {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed; }
+
+ul, ol, menu {
+  list-style: none; }
+
+fieldset, img {
+  border: none; }
+
+img, object, select, input, textarea, button {
+  vertical-align: middle; }
+
+input, textarea, select, address, caption, cite, code, dfn, em, i, b, strong, small, th, var, abbr {
+  font-size: 100%;
+  font-style: normal; }
+
+caption, th {
+  text-align: left; }
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption {
+  display: block; }
+
+code, kbd, pre, samp, tt {
+  font-family: Consolas, "Courier New", Courier, monospace; }
+
+address, cite, dfn, em, var, i {
+  font-style: normal; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+/*base*/
+body {
+  overflow: hidden; }
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("../img/bgd.png") no-repeat;
+  background-size: 100%; }
+
+.index_container_bgd {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+#translateBtn {
+  width: 0.87037rem;
+  position: absolute;
+  top: 0.49074rem;
+  left: 8.50926rem; }
+
+.leaf {
+  width: 1.00926rem;
+  position: absolute;
+  top: 0rem;
+  left: 1.77778rem; }
+
+.earth_bottom {
+  width: 4.53704rem;
+  position: absolute;
+  top: 0.92593rem;
+  left: 0rem; }
+
+.earth {
+  width: 4.00926rem;
+  position: absolute;
+  top: 4.74074rem;
+  left: 5.99074rem; }
+
+.earthimg {
+  width: 2.65741rem;
+  position: absolute;
+  top: 0.64815rem;
+  left: 0.9537rem;
+  animation: zoom 2s ease infinite;
+  -webkit-animation: zoom 2s ease infinite; }
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    background-color: blue; }
+  33.33333% {
+    transform: scale(2);
+    background-color: green; }
+  66.66667% {
+    transform: scale(3);
+    background-color: red; }
+  100% {
+    transform: scale(3);
+    background-color: red; } }
+
+/*# sourceMappingURL=main.css.map */
