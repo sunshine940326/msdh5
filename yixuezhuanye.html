@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>医学专业</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/yixuezhuanye/yixue_bgd.png" class="bgd">
+    <img src="img/yixuezhuanye/shouce_cloud1.png" class="shouce_cloud1">
+    <img src="img/yixuezhuanye/shouce_cloud2.png" class="shouce_cloud2">
+    <img src="img/yixuezhuanye/shouce_cloud3.png" class="shouce_cloud3">
+    <img src="img/yixuezhuanye/shouce_cloud4.png" class="shouce_cloud4">
+    <img src="img/yixuezhuanye/shouce_cloud5.png" class="shouce_cloud5">
+    <img src="img/yixuezhuanye/shouce_fangdajing.png" class="shouce_fangdajing">
+    <img src="img/yixuezhuanye/shouce_thing1.png" class="shouce_thing1">
+    <img src="img/yixuezhuanye/shouce_thing2.png" class="shouce_thing2">
+    <img src="img/yixuezhuanye/white.png" class="white1">
+    <img src="img/yixuezhuanye/white.png" class="white2">
+    <img src="img/yixuezhuanye/white.png" class="white3">
+    <img src="img/yixuezhuanye/white.png" class="white4">
+    <img src="img/yixuezhuanye/white.png" class="white5">
+    <img src="img/yixuezhuanye/balloon.png" class="balloon">
+    <a href="http://www.msdp.cn/" class="link_yiliaoshouce">
+        <img src="img/yixuezhuanye/link_yimoxiangtong.png" id="link_yiliaoshouce">
+    </a>
+    <a href="http://www.univadis.cn/" class="link_yiweida">
+        <img src="img/yixuezhuanye/link_yiweida.png" id="link_yiweida">
+    </a>
+
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    document.body.style.height = view().h + 'px';
+
+
+    window.onload= function () {
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+        }, false);
+
+    }
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+</script>
+</body>
+</html>

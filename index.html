@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1, maximum-scale=1">
+    <title>默沙东官网</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+
+<body>
+
+<div class="container" id="container">
+    <img src="img/bgd.png" class="bgd">
+    <p class="translate">
+        <img src="img/en.png" id="cn">
+    </p>
+    <a href="shehuizeren.html">
+        <p class="earth">
+            <img src="img/earth.png" class="earthimg">
+            <img src="img/leaf.png" class="leaf">
+        </p>
+    </a>
+    <img src="img/earth_bottom.png" class="earth_bottom">
+    <p class="heart">
+        <a href="shimingyuyuanjing.html">
+            <img src="img/heartbig.png" class="heartbig">
+        </a>
+        <img src="img/heart.png" class="heart1">
+        <img src="img/heart.png" class="heart2">
+        <img src="img/heart.png" class="heart3">
+        <img src="img/heart.png" class="heart4">
+    </p>
+    <p class="ball">
+        <img src="img/ball.png" class="ball1">
+        <img src="img/ball.png" class="ball2">
+    </p>
+
+    <p class="talkleft" id="talkleft">
+        <img src="img/talkleft.png"/>
+        <i class="dot dot1"></i>
+        <i class="dot dot2"></i>
+        <i class="dot dot3"></i>
+    </p>
+    <p class="talkright" id="talkright">
+        <img src="img/talkright.png"/>
+        <i class="dot dot4"></i>
+        <i class="dot dot5"></i>
+        <i class="dot dot6"></i>
+    </p>
+    <a href="chanpin.html">
+        <p class="water">
+            <img src="img/water.png" class="water1">
+            <img src="img/water.png" class="water2">
+            <img src="img/water.png" class="water3">
+            <img src="img/water.png" class="water4">
+            <img src="img/water1.png" class="water5">
+            <img src="img/water1.png" class="water6">
+            <img src="img/water1.png" class="water7">
+            <img src="img/water1.png" class="water8">
+            <img src="img/water1.png" class="water9">
+            <img src="img/water1.png" class="water10">
+        </p>
+    </a>
+    <a href="chanpin.html">
+        <p class="waterRed">
+            <img src="img/water.png" class="water1">
+            <img src="img/water.png" class="water2">
+            <img src="img/water.png" class="water3">
+            <img src="img/water.png" class="water4">
+            <img src="img/water1.png" class="water5">
+            <img src="img/water1.png" class="water6">
+            <img src="img/water1.png" class="water7">
+            <img src="img/water1.png" class="water8">
+            <img src="img/water1.png" class="water9">
+            <img src="img/water1.png" class="water10">
+        </p>
+    </a>
+    <p class="cloud">
+        <img src="img/cloud.png" class="cloud1">
+        <img src="img/cloud2.png" class="cloud2">
+        <img src="img/cloud.png" class="cloud3">
+        <img src="img/cloud2.png" class="cloud4">
+    </p>
+    <p class="ship">
+        <img src="img/ship.png" class="ship1">
+        <img src="img/ship.png" class="ship2">
+    </p>
+
+    <a href="chanpin.html">
+        <img src="img/chanpin_img.png" class="chanpin_img">
+    </a>
+    <a href="yixuezhuanye.html">
+        <img src="img/yixue_img.png" class="yixue_img">
+    </a>
+    <a href="tushuguan.html">
+        <img src="img/index_book.png" class="book_img">
+    </a>
+    <a href="rencaifazhan.html">
+        <img src="img/people_img.png" class="people_img">
+    </a>
+    <a href="keyan.html">
+        <img src="img/keyan_img.png" class="keyan_img">
+    </a>
+    <a href="shimingyuyuanjing.html" class="link_shiming">
+        <img src="img/link_shiming.png" id="link_shiming">
+    </a>
+    <a href="gongsigaikuang.html" class="link_gaikuang">
+        <img src="img/link_gaikuang.png" id="link_gaikuang">
+    </a>
+    <a href="shehuizeren.html" class="link_zeren">
+        <img src="img/link_zeren.png" id="link_zeren">
+    </a>
+    <a href="chanpin.html" class="link_chanpin">
+        <img src="img/link_chanpin.png" id="link_chanpin">
+    </a>
+    <a href="yixuezhuanye.html" class="link_yixue">
+        <img src="img/link_yixue.png" id="link_yixue">
+    </a>
+    <a href="tushuguan.html" class="link_tushuguan">
+        <img src="img/link_tushuguan.png" id="link_tushuguan">
+    </a>
+    <a href="rencaifazhan.html" class="link_rencai">
+        <img src="img/link_rencai.png" id="link_rencai">
+    </a>
+    <a href="keyan.html" class="link_keyan">
+        <img src="img/link_keyan.png" id="link_keyan">
+    </a>
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    /*判断横竖屏*/
+    document.body.style.height = view().h + 'px';
+
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+    window.onload= function () {
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+        }, false);
+
+    }
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a7483cf7-3295-4081-a08a-d5c65ea7d6c3" name="139" url="http://139.196.178.86">
+        <fileTransfer host="139.196.178.86" port="22" rootFolder="/mnt/wwwroot/ileou_com/demo/msdh5" accessType="SFTP" password="dfefdfc6dfc6dfc5dfcddfc7dfcfdf8bdf98df9adf9bdf9c" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

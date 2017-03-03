@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>科学图书馆</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/tushuguan/tushuguan_bgd.png" class="bgd">
+    <div class="tushuguan_heart">
+        <img src="img/tushuguan/thing1.png" class="thing1">
+        <img src="img/tushuguan/thing2.png" class="thing2">
+        <img src="img/tushuguan/thing3.png" class="thing3">
+        <img src="img/tushuguan/thing4.png" class="thing4">
+        <img src="img/tushuguan/pingzi.png" class="tushuguan_heart1">
+    </div>
+    <img src="img/tushuguan/book.gif" class="tushuguan_book">
+
+    <a href="xinyaoyanfa.html" class="link_xinyao">
+        <img src="img/tushuguan/link_xinyao.png" id="link_xinyao">
+    </a>
+    <a href="imagetextlist.html" class="link_shouce">
+        <img src="img/tushuguan/link_shouce.png" id="link_shouce">
+    </a>
+    <a href="http://www.msdmanuals.cn" class="link_zhenliaoshouce">
+        <img src="img/tushuguan/link_zhenliaoshouce.png" id="link_zhenliaoshouce">
+    </a>
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    document.body.style.height = view().h + 'px';
+
+
+    window.onload= function () {
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+        }, false);
+
+    }
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+
+</script>
+</body>
+</html>

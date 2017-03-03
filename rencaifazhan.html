@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;user-scalable=no ;initial-scale=1; maximum-scale=1;">
+    <title>人才发展</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="container">
+    <img src="img/rencaifazhan/rencai_bgd.png" class="bgd">
+    <img src="img/rencaifazhan/cloud1.png" class="rencai_cloud1">
+    <img src="img/rencaifazhan/cloud2.png" class="rencai_cloud2">
+    <img src="img/rencaifazhan/cloud4.png" class="rencai_cloud4">
+    <img src="img/rencaifazhan/cloudbook1.png" class="rencai_cloud5">
+    <img src="img/rencaifazhan/cloudbook2.png" class="rencai_cloud6">
+    <img src="img/rencaifazhan/email.png" class="rencai_email">
+    <img src="img/rencaifazhan/huojian.png" class="rencai_huojian">
+    <img src="img/rencaifazhan/huojian2.png" class="rencai_huojian2">
+    <div id="tanhao">
+        <img src="img/rencaifazhan/tanhao.png" class="rencai_tanhao1">
+        <img src="img/rencaifazhan/tanhao.png" class="rencai_tanhao2">
+        <img src="img/rencaifazhan/tanhao.png" class="rencai_tanhao3">
+        <img src="img/rencaifazhan/tanhao.png" class="rencai_tanhao4">
+        <img src="img/rencaifazhan/tanhao.png" class="rencai_tanhao5">
+        <img src="img/rencaifazhan/tanhao.png" class="rencai_tanhao6">
+    </div>
+    <div class="star">
+        <img src="img/rencaifazhan/star.png" alt="">
+    </div>
+    <img src="img/rencaifazhan/setting.png" class="rencai_setting">
+    <img src="img/rencaifazhan/paper.png" class="rencai_paper">
+    <img src="img/rencaifazhan/fangdajing.png" class="rencai_fangdajing">
+    <img src="img/rencaifazhan/tizi.png" class="rencai_tizi">
+    <a href="imagetext.html" class="link_rencaijiazhi">
+        <img src="img/rencaifazhan/link_rencaijiazhi.png" id="link_rencaijiazhi">
+    </a>
+    <a href="imagetext.html" class="link_guzhu">
+        <img src="img/rencaifazhan/link_guzhu.png" id="link_guzhu">
+    </a>
+    <a href="imagetext.html" class="link_yumojujin">
+        <img src="img/rencaifazhan/link_yumojujin.png" id="link_yumojujin">
+    </a>
+    <a href="http://lingd.360med.so/jobs" class="link_zhaopin">
+        <img src="img/rencaifazhan/link_zhaopin.png" id="link_zhaopin">
+    </a>
+    <img src="img/rencaifazhan/cloth.gif" class="rencai_cloth">
+</div>
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer_content">
+        <i class="icon mod-orient-layer_icon-orient"></i>
+        <div class="text">请将屏幕旋转至竖屏</div>
+        <div class="text text1">体验更佳</div>
+
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+<script>
+    document.body.style.height = view().h + 'px';
+
+    window.onload = function () {
+        document.addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        }, false);
+    }
+
+    window.addEventListener("resize", function() {
+        if (window.innerWidth<window.innerHeight) {
+            $('#orientLayer').hide();
+        }else{
+            //横屏状态
+            $('#orientLayer').show();
+        }
+    }, false);
+
+
+</script>
+</body>
+</html>
