@@ -78,25 +78,13 @@ h2 {
     position: relative;
     width: 92%;
     margin: 4% auto;
-    margin-bottom: 16%;
+    margin-bottom: 4%;
     top: 0;
     left: 0;
     min-width: 300px;
 
 }
 
-.logo {
-    position: absolute;
-
-    bottom: -50px;
-    right: 2%;
-    width: 25%;
-
-}
-
-.logo img {
-    width: 100%;
-}
 
 .text {
     padding: 5px 0;
